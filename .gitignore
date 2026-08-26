@@ -1,15 +1,12 @@
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.coverage
-.env
-.venv/
-venv/
-.cache/
+# Repository-local environments and generated Python state
+/venv/
+/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
 
-models/*
-!models/.gitkeep
-
-# Keep lightweight, reproducible evidence (JSON, CSV, and PNG) in Git while
-# excluding Hugging Face checkpoints and optimizer state.
-results/**/runtime/
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

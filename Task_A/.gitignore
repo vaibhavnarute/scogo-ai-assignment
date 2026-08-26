@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.env
+.venv/
+venv/
+.cache/
+
+models/*
+!models/.gitkeep
+
+# Keep lightweight, reproducible evidence (JSON, CSV, and PNG) in Git while
+# excluding Hugging Face checkpoints and optimizer state.
+results/**/runtime/
