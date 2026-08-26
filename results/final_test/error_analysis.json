@@ -1,0 +1,108 @@
+{
+  "analysis_guardrail": "Post-hoc reporting on the final test set only; these observations were not used for model selection or tuning.",
+  "total_test_examples": 1000,
+  "total_errors": 76,
+  "error_rate": 0.076,
+  "direction_counts": {
+    "negative_as_positive": 36,
+    "positive_as_negative": 40
+  },
+  "heuristic_category_counts": {
+    "mixed_or_contrast_language": 52,
+    "negation_language": 16,
+    "other_or_domain_specific": 8
+  },
+  "high_confidence_error_count": 57,
+  "top_high_confidence_errors": [
+    {
+      "test_index": 815,
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.998382,
+      "token_count": 40,
+      "heuristic_category": "negation_language",
+      "text": "God's and Kings: Chronicles of the Kings #1\n\nThis was a great book to read. I had a hard time putting it down! Can not wait to read the next one!"
+    },
+    {
+      "test_index": 328,
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.998318,
+      "token_count": 33,
+      "heuristic_category": "other_or_domain_specific",
+      "text": "thank you\n\nThis one gift I could give my grown daughter. I read this book over and over to her as a child. It was in wonderful condition!"
+    },
+    {
+      "test_index": 23,
+      "true_label": "positive",
+      "predicted_label": "negative",
+      "confidence": 0.99804,
+      "token_count": 73,
+      "heuristic_category": "mixed_or_contrast_language",
+      "text": "Wrong color sent\n\nThe item itself is very good; however, I ordered 3 different colors, one of which you did not send (yellow rainbow). Instead, you sent 2 Medieval Blues and one Blue Hawaii. I was disappointed not to receive the color I had specified, especially since the girl that took the order stated that all 3 colors were in stock."
+    },
+    {
+      "test_index": 846,
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.998008,
+      "token_count": 171,
+      "heuristic_category": "other_or_domain_specific",
+      "text": "bling bling\n\nman, this album is phat. the title track, \"F the BS\", and \"Buttermilk Bisquick\", have more sweet raps than all of p-diddy's albums put together. mix-a-lot has been dropping tricked-out heat rocks longer than anyone in the biz, and it shows on this record. he has elevated himself to the level of Abraham Lincoln, Ghandi, and Hitler with his pure genius. nothing on earth has ever touched me in such a way as this sweet album. ever since i picked up the 12\" lp ... i have been a better person. rap on, mixy, rap on, and let those B.G.'s eat your dust, you loc-ed out O.G.holla"
+    },
+    {
+      "test_index": 183,
+      "true_label": "positive",
+      "predicted_label": "negative",
+      "confidence": 0.997873,
+      "token_count": 141,
+      "heuristic_category": "mixed_or_contrast_language",
+      "text": "Loose Weight the Healthy way\n\nI lost almost 20 pounds just by taking herbalife nothing really worked for me, i was so desperate didn't know what to do...I even try diet pills over the counter but i always got a side effect by taking them. I'm still loosing weight from 250 pounds to 160 pounds (oh yeah baby), Like the song says I'M BRINGING SEXY BACK YEAH! Make sure to use formula 1 shake mix and 3 protein, just replace a meal if you don't eat breakfast like me drink the shake every morning ....2 scoops of shake mix and 1 scoop of proteinand you'll see results NOT KIDDING!"
+    },
+    {
+      "test_index": 545,
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.997653,
+      "token_count": 42,
+      "heuristic_category": "negation_language",
+      "text": "it sounds great!~!~!~!~!\n\nit sounds great im just wondering y it did not already have 5 stars! di u think it would be great 4 my 12 year old?"
+    },
+    {
+      "test_index": 138,
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.997507,
+      "token_count": 46,
+      "heuristic_category": "negation_language",
+      "text": "this movie is available on iTunes!!!\n\nit's less than 20 bucks....so don't go spending anymore than that in this wonderful economy we have!!Cheers..Tony(NYC)"
+    },
+    {
+      "test_index": 760,
+      "true_label": "negative",
+      "predicted_label": "positive",
+      "confidence": 0.997474,
+      "token_count": 22,
+      "heuristic_category": "other_or_domain_specific",
+      "text": "College book\n\nThank you for sending the book fast so that I could start reading it for my college class"
+    },
+    {
+      "test_index": 398,
+      "true_label": "positive",
+      "predicted_label": "negative",
+      "confidence": 0.997414,
+      "token_count": 120,
+      "heuristic_category": "mixed_or_contrast_language",
+      "text": "Achtung!\n\nThis movie left me on the edge of my seat and short of breath. Once just wasn't enough in the theater. I just had to see it again on the big screen. I never used to be into movies with subtitles. But the effect just isn't the same as it is in its native tongue. Just when I thought it's over, it just takes you on another turn and another and another!!! If you like fast paced, unpredictable action with a soundtrack that fits its movie like a glove, this one's for you."
+    },
+    {
+      "test_index": 594,
+      "true_label": "positive",
+      "predicted_label": "negative",
+      "confidence": 0.997279,
+      "token_count": 182,
+      "heuristic_category": "mixed_or_contrast_language",
+      "text": "A book for the ages\n\nI mistakenly checked this book out of the library when I was in 4th grade (1964), thinking it was going to be about knights (\"The Silver Sword\"). Imagine my surprise when, upon reading the first page, I discovered it was about a young boy (my age) separated from his family during WWII. Yet, even that first page sucked me in. I was not an avid, or even a good reader at that age, but I couldn't put it down, and finished the book in two days. I proceeded to check it out at least once a year until I could no longer find it in libraries. It was probably the single biggest reason I learned to love reading. My son is now in 4th grade, and I logged on to see if I could find it, and will make sure it becomes a part of his life as well."
+    }
+  ]
+}

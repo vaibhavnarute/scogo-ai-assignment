@@ -1,0 +1,35 @@
+{
+  "accuracy": 0.859,
+  "confusion_matrix": [
+    [
+      454,
+      46
+    ],
+    [
+      95,
+      405
+    ]
+  ],
+  "experiment": "head_only",
+  "loss": 0.4785403311252594,
+  "macro_f1": 0.8586606442067404,
+  "macro_precision": 0.8624812701182153,
+  "macro_recall": 0.859,
+  "per_class": {
+    "negative": {
+      "f1": 0.86558627264061,
+      "precision": 0.8269581056466302,
+      "recall": 0.908,
+      "support": 500
+    },
+    "positive": {
+      "f1": 0.8517350157728707,
+      "precision": 0.8980044345898004,
+      "recall": 0.81,
+      "support": 500
+    }
+  },
+  "total_parameters": 66955010,
+  "train_runtime": 514.5919,
+  "trainable_parameters": 592130
+}

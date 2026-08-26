@@ -1,0 +1,17 @@
+{
+  "batch_size": 8,
+  "data_cache_dir": "D:\\scogo-ai-assignment\\Task_A\\.cache\\dataset",
+  "dataset_name": "mteb/amazon_polarity",
+  "epochs": 2,
+  "learning_rate": 2e-05,
+  "max_length": 256,
+  "model_name": "distilbert-base-uncased",
+  "models_dir": "D:\\scogo-ai-assignment\\Task_A\\models",
+  "results_dir": "D:\\scogo-ai-assignment\\Task_A\\results",
+  "seed": 42,
+  "stream_shuffle_buffer": 10000,
+  "test_size": 1000,
+  "train_size": 5000,
+  "val_size": 1000,
+  "weight_decay": 0.01
+}
