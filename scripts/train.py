@@ -56,6 +56,9 @@ def promote_best_model() -> dict[str, object]:
     shutil.copytree(settings.models_dir / winner, destination)
     selection = {"selected_experiment": winner, "validation_macro_f1": score}
     save_json(destination / "selection.json", selection)
+    # Keep a lightweight selection record outside the ignored model directory so
+    # result provenance remains visible in Git without committing model weights.
+    save_json(settings.results_dir / "model_selection.json", selection)
     return selection
 
 

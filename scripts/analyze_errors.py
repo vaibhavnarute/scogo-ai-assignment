@@ -28,6 +28,7 @@ NEGATION_PATTERN = re.compile(
     r"\b(no|not|never|neither|nor|hardly|barely|without|isn't|wasn't|don't|didn't|can't|won't)\b",
     re.IGNORECASE,
 )
+RUN_ID = f"amazon-polarity-seed-{settings.seed}-full-final-test"
 
 
 def heuristic_category(text: str, token_count: int) -> str:
@@ -81,6 +82,11 @@ def main() -> None:
                 continue
             errors.append(
                 {
+                    "run_id": RUN_ID,
+                    "dataset": settings.dataset_name,
+                    "canonical_split": "test",
+                    "subset_seed": settings.seed + 2,
+                    "selected_experiment": "full",
                     "test_index": start + offset,
                     "true_label": LABELS[true_id],
                     "predicted_label": LABELS[predicted_id],
@@ -104,7 +110,37 @@ def main() -> None:
         f'{error["true_label"]}_as_{error["predicted_label"]}' for error in errors
     )
     high_confidence = sorted(errors, key=lambda row: float(row["confidence"]), reverse=True)
+    selection_path = settings.models_dir / "best" / "selection.json"
+    selection = json.loads(selection_path.read_text(encoding="utf-8"))
+    final_metrics_path = result_dir / "metrics.json"
+    final_metrics = json.loads(final_metrics_path.read_text(encoding="utf-8"))
     payload = {
+        "run_id": RUN_ID,
+        "provenance": {
+            "generated_by": "scripts/analyze_errors.py",
+            "relationship": (
+                "distilbert-base-uncased -> independent training experiments -> validation "
+                "Macro-F1 selection -> models/best -> final test evaluation -> these errors"
+            ),
+            "base_model": settings.model_name,
+            "dataset": settings.dataset_name,
+            "canonical_split": "test",
+            "subset_seed": settings.seed + 2,
+            "subset_size": settings.test_size,
+            "label_mapping": {str(key): value for key, value in LABELS.items()},
+            "max_length": settings.max_length,
+            "selected_model": selection,
+            "source_artifacts": {
+                "training_config": "results/full/config.json",
+                "validation_metrics": "results/full/metrics.json",
+                "model_selection": "results/model_selection.json",
+                "final_test_config": "results/final_test/config.json",
+                "final_test_metrics": "results/final_test/metrics.json",
+                "final_test_confusion_matrix": "results/final_test/confusion_matrix.png",
+                "all_error_rows": "results/final_test/errors.csv",
+            },
+            "final_test_metrics_snapshot": final_metrics,
+        },
         "analysis_guardrail": (
             "Post-hoc reporting on the final test set only; these observations were not used "
             "for model selection or tuning."

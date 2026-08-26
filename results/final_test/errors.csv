@@ -1,229 +1,229 @@
-test_index,true_label,predicted_label,confidence,token_count,heuristic_category,text
-8,positive,negative,0.98449,190,mixed_or_contrast_language,"Never an IPOD believer..now I'm sold
+run_id,dataset,canonical_split,subset_seed,selected_experiment,test_index,true_label,predicted_label,confidence,token_count,heuristic_category,text
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,8,positive,negative,0.98449,190,mixed_or_contrast_language,"Never an IPOD believer..now I'm sold
 
 I have never been a believer in the IPOD before. Always seemed to fragile and too expensive. I had a Creative Labs Zen that was sturdy...took abuse...but heavy...a bit cumbersome. I saw the Nano and immediately checked it out. Was I wrong about Apple. This Nano is amazing. I had it for less than 2 hours and put about 400 songs and more than 200 clear, sharp pictures on it. I'm sold! Also, all those folks who advise how this thing scratches, etc. I don't buy it. I've thrown this around my car, my pocket..all over the place. It shows some fingerprints, but that's about it. No scratches, no broken screens, nothing except cystal clear sound a crystal clear display. I love my IPOD Nano. Great job Apple!"
-23,positive,negative,0.99804,73,mixed_or_contrast_language,"Wrong color sent
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,23,positive,negative,0.99804,73,mixed_or_contrast_language,"Wrong color sent
 
 The item itself is very good; however, I ordered 3 different colors, one of which you did not send (yellow rainbow). Instead, you sent 2 Medieval Blues and one Blue Hawaii. I was disappointed not to receive the color I had specified, especially since the girl that took the order stated that all 3 colors were in stock."
-37,positive,negative,0.996905,61,mixed_or_contrast_language,"review
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,37,positive,negative,0.996905,61,mixed_or_contrast_language,"review
 
 product was fine. HOWEVER I will not buy from this vendor again as bought 2 cds, both were sent in the same envelope but I was charged with 2 handling /Shipping chrgs. I questioned this practice and was advsed by vendor I was charged this basically because he could."
-39,negative,positive,0.969252,86,mixed_or_contrast_language,"A bomb
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,39,negative,positive,0.969252,86,mixed_or_contrast_language,"A bomb
 
 I loved the first 2 Jaws films. As a child I saw this one also and it scared me, I was in the video saw and decided to rent it. Definatly nott as scary as I remember there were quite a few laughs, unintentially I am sure. the 3D effects were just laughable I had a good time watching it but don't expect to to be horrified."
-48,positive,negative,0.577548,39,mixed_or_contrast_language,"Almost what I expected...
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,48,positive,negative,0.577548,39,mixed_or_contrast_language,"Almost what I expected...
 
 ...they are inexpensive, have UV protection, but they are a little snug on my head. Maybe my head is just wide."
-52,negative,positive,0.995236,105,mixed_or_contrast_language,"new badge soul badge go to cinabar island NOW !
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,52,negative,positive,0.995236,105,mixed_or_contrast_language,"new badge soul badge go to cinabar island NOW !
 
 venonat. venomoth. golbat voltorb. ash earns his soul badge and in the safari zone they meet 2 pokemon kangaskahan and drateni (not on video) but the drateni almost gets stolen by team roket but EVOLVES INTO DRAGONAIR. then in the lahamery pokemon ranch ash rides ponyta but EVOLVES INTO RAPIDASH.. FOLOWED BY PIKACHU PARTY ."
-57,negative,positive,0.93629,97,mixed_or_contrast_language,"First 3 songs good then...a little disapoointing
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,57,negative,positive,0.93629,97,mixed_or_contrast_language,"First 3 songs good then...a little disapoointing
 
 When I head ""Shining Light"" I thought this was going to be real find. When I bought this CD, I was let down a little. The first things (including Shining Light) are very catchy and good. But, from then on, the CD just goes into gradual mediocrity. Oh well, I guess I still think Shining Light is a great song with great words."
-61,negative,positive,0.985196,80,mixed_or_contrast_language,"freely available
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,61,negative,positive,0.985196,80,mixed_or_contrast_language,"freely available
 
 Since those responsible for this animated version of ""Animal Farm"" failed to renew their copyright (this came out in 1954), this film is now freely available, for example on YouTube, where it can be legally uploaded in its entirety.It follows the book much more than the recent version did, although still very loosely. The biggest difference is its completely different, more hopeful ending."
-105,positive,negative,0.996248,116,mixed_or_contrast_language,"Not Just Brokaw
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,105,positive,negative,0.996248,116,mixed_or_contrast_language,"Not Just Brokaw
 
 I was terrifically moved by this recording, and Tom Brokaw was the least of it. The supporting cast really throws themselves into the letters from The Greatest Generation. Nothing is hokey or excessive, but the honest human sentiment is tough to resist.By contrast, Tom Brokaw sounds like he's phoning in his part of the script. But he has comparatively little to do here. The heavy lifting is done by the professional narrator and actors. A stunner. It's impossible to recommend this edition too highly."
-112,negative,positive,0.734362,72,other_or_domain_specific,"SOMEWHERE IN TIME
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,112,negative,positive,0.734362,72,other_or_domain_specific,"SOMEWHERE IN TIME
 
 CAUGHT SOMEWHERE IN TIME-7/10WASTED YEARS-5/10SEA OF MADNESS-6/10HEAVEN CAN WAIT-5/10THE LONELINESS OF THE LONG DISTANCE RUNNER-5/10STRANGER IN A STRANGE LAND-6/10DEJA VU-5/10ALEXANDER THE GREAT-6/10"
-138,negative,positive,0.997507,46,negation_language,"this movie is available on iTunes!!!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,138,negative,positive,0.997507,46,negation_language,"this movie is available on iTunes!!!
 
 it's less than 20 bucks....so don't go spending anymore than that in this wonderful economy we have!!Cheers..Tony(NYC)"
-174,negative,positive,0.673409,180,mixed_or_contrast_language,"Can only be used with full zoom
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,174,negative,positive,0.673409,180,mixed_or_contrast_language,"Can only be used with full zoom
 
 The E550 is a good camera and this lens does do a good job of zooming in on the subject but due to the way the camera and lens are designed, you must have the camera's zoom fully extended in order to use this tele lens. So this means if the subject is moving around a lot, such as my daughter playing soccer, you will miss the shots where the action has moved to close to you because you can't zoom out. As long as the action remains at some distance to you than this zoom lens is useful. I unfortunately have too many ruined shots because the action moved too close and their heads get cut off, etc.Another negative is that the viewfinder doesn't show the zoomed in image, you must use the lcd screen to frame a shot, which can be difficult in bright sunlight."
-183,positive,negative,0.997873,141,mixed_or_contrast_language,"Loose Weight the Healthy way
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,183,positive,negative,0.997873,141,mixed_or_contrast_language,"Loose Weight the Healthy way
 
 I lost almost 20 pounds just by taking herbalife nothing really worked for me, i was so desperate didn't know what to do...I even try diet pills over the counter but i always got a side effect by taking them. I'm still loosing weight from 250 pounds to 160 pounds (oh yeah baby), Like the song says I'M BRINGING SEXY BACK YEAH! Make sure to use formula 1 shake mix and 3 protein, just replace a meal if you don't eat breakfast like me drink the shake every morning ....2 scoops of shake mix and 1 scoop of proteinand you'll see results NOT KIDDING!"
-186,negative,positive,0.987381,238,negation_language,"DECEPCIONADO
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,186,negative,positive,0.987381,238,negation_language,"DECEPCIONADO
 
 Me encanta leer libros de cocina y pense que este sería ""el libro"" para conocer arte y costumbres culinarias de otros paises. Como soy originario de México y ahora vivo en Brasil, lo primero que leí fue lo referente a estoa paises. QUE DECEPCIÓN!La idea del libro es excelente y seguramente la autora tuvo que viajar, leer y estudiar mucho, pero pienso que debió haber pedido ayuda a que revisaran sus capítulos personas conocedoras de cada país o región.Tiene muchos errores históricos, geográficos, culinarios y de ortografía del idioma original. Estoy preparando una lista de ellos que posteriormente enviaré.La felicito por su dedicación, perodes graciadamente el resultado no es del todo bueno.Hans Rio de Janeiro/Brasil"
-188,negative,positive,0.972268,60,mixed_or_contrast_language,"Could have been about skateboarding
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,188,negative,positive,0.972268,60,mixed_or_contrast_language,"Could have been about skateboarding
 
 Would appeal to out of work 20 somethings who find hooting out loud a significant expression of inner experience. Could have been subtitled ""Hiking with your bar buddies, are we thirty ,yet?.""Some nice footage. better vids abound."
-220,positive,negative,0.995574,161,mixed_or_contrast_language,"If you haven't read it, you owe it to yourself
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,220,positive,negative,0.995574,161,mixed_or_contrast_language,"If you haven't read it, you owe it to yourself
 
 I just read this for the first time at 28. Wow, what an eye opener. The things Orwell predicted in 1984, such as the technology, is amazing considering how long ago it was written. The politics are messed up by current standards, but frighteningly possible. The tense mood of the book draws you in, and there are moments (especially near the end) that would be truly terrifying to experience. The chapter with ""Room 101"" I read with a shudder.The reason I didn't give it 5 stars is because it bogs down a few times. I understand that this is to explain the world and how such a horrific existence came to be, but a slow start to any book is rather annoying."
-228,positive,negative,0.994382,114,mixed_or_contrast_language,"great assortment of clamp sizes
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,228,positive,negative,0.994382,114,mixed_or_contrast_language,"great assortment of clamp sizes
 
 I debated ordering these for several months. I waited for a sale price or free shipping from Grizzly or Amazon, but it never came. The poor packaging reviews scared me, but my two boxes arrived in perfect condition. The boxes were smaller than I thought they would be and each weighed 35lbs. I'm happy with the clamps but for some reason I thought they would be a little beefier. They are solid, don't get me wrong, but I envisioned them being more of a medium duty size."
-240,negative,positive,0.817659,225,mixed_or_contrast_language,"Best rapper alive? HAHAHAHAHAHA
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,240,negative,positive,0.817659,225,mixed_or_contrast_language,"Best rapper alive? HAHAHAHAHAHA
 
 Yea dont make me laugh, best rapper alive?? Yea f*cking right! First of all cash money is THE stupidest name for a rap group ever, even though it does accurately describe the greed and ignorance it spreads like a wildfire through its music. Though i hav to admit Lil Wayne IS the best rapper in cash money (which really doesnt say anything at all when u look at the competition). His lyrics are all about the 4 big things in commercial rap these days, (money, cars, women and jewlery). Man if Tupac, Big L and Biggie were still alive there wouldnt be clowns like this around. If you want to know the REAL best hip hop albums of '04 pick up Madvillainy, 4th Dimensional Rocketship Going Up, Viktor Vaughn 2 and Murs 3:16.(Oh yea, and please click the ""not helpful"" button so i have an accurate count of the number of mainstream loving retards that read this, thanks)."
-296,negative,positive,0.927862,125,mixed_or_contrast_language,"Need a lawyer or an act of Congress !!!!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,296,negative,positive,0.927862,125,mixed_or_contrast_language,"Need a lawyer or an act of Congress !!!!
 
 After the 200 jars of your uranium ore arrived at my home. A heavily armed S.W.A.T team tossed in a few tear gas canisters and broke down my front door. Thankfully, they have WIFI here at Guantanamo. I hear my wife will be getting out of the hospital soon and my kitty kat will be fetching tear gas canisters in heaven now. All of my new friends don't speak a word of english but the weather is nice here. Thanks Amazon.com and thank you Department of Homeland Security!"
-307,negative,positive,0.890333,51,other_or_domain_specific,"Two things
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,307,negative,positive,0.890333,51,other_or_domain_specific,"Two things
 
 Eragon has two things going for it:1) The cover. Come on, ya gotta admit that it's pretty, right?2) The plural of ""Galbatorix"" is ""Galbatorices""."
-309,positive,negative,0.896043,33,mixed_or_contrast_language,"Additional Info
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,309,positive,negative,0.896043,33,mixed_or_contrast_language,"Additional Info
 
 Didn't see this listed but if you put the supplimental disc in an X-box you can play the Constantine video game."
-325,negative,positive,0.833637,198,mixed_or_contrast_language,"A Disappointing Misrepresentation
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,325,negative,positive,0.833637,198,mixed_or_contrast_language,"A Disappointing Misrepresentation
 
 Baking With Julia is an AMAZING Book.It is an exceptionally well written resource that is an accurate reflection of the PBS televised series of same name.When I stumbled onto the option to order a DVD [suposedly of the full series] on the book's writter, Dorie Greenspan I ordered it immediately!!Well, the DVD arrived today and it is only a minute fraction [i.e., only 8 shows from this far more extensive series] selection of the books recipes. What a misleading dissapointment - as I expected when I place the order for this dvd that it reflected the full series ... nothing in the product description indicated otherewise.Would I still purchase it if I knew up front that it was not the full series ... probably yes ... because I love Julia as well as the series and the book.However, the nature of this post is ""Buyer beware"""
-328,negative,positive,0.998318,33,other_or_domain_specific,"thank you
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,328,negative,positive,0.998318,33,other_or_domain_specific,"thank you
 
 This one gift I could give my grown daughter. I read this book over and over to her as a child. It was in wonderful condition!"
-344,negative,positive,0.91684,130,mixed_or_contrast_language,"Travel water bowl best suited to smaller breeds
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,344,negative,positive,0.91684,130,mixed_or_contrast_language,"Travel water bowl best suited to smaller breeds
 
 I gave this a two star rating based on the fact that mine was to be used for a larger dog. This product would be adequate for a small dog. But the opening for a dog with a larger muzzle is not large enough. The claims for not spilling water seem to be true. However, since only about an inch of water is in the bottom of the opening at any time, it's more difficult for a larger dog to get his nose in and get a good drink. I guess if the dog were extremely thirsty and had no other water supply, this could do in a pinch."
-347,positive,negative,0.985876,85,mixed_or_contrast_language,"Perversely Uplifting
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,347,positive,negative,0.985876,85,mixed_or_contrast_language,"Perversely Uplifting
 
 I am trying to be frugal with my five star reviews but this album deserves full marks without question. Judging by my screen name, one can safely assume that I am a Will Oldham fan. I, myself not being much of a writer, will avoid trying to pin this album down with my words but direct those interested to reviews at both pitchforkmedia.com and nme.com."
-349,negative,positive,0.987505,87,negation_language,"Could have been better
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,349,negative,positive,0.987505,87,negation_language,"Could have been better
 
 I bought this book for the unique spreads and read it thoroughly. I would have liked to see explanations for why the cards are laid out in certain order and places. I thought the questions were too specific and would be difficult to answer with numerous cards. Interesting spreads, good subject matter, not well executed or explained at all. Please rewrite the book, Ms. Abraham and I will buy it again."
-350,positive,negative,0.958013,114,negation_language,"Electric Light Orchestra - Part II - One Night Live in Australia '95
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,350,positive,negative,0.958013,114,negation_language,"Electric Light Orchestra - Part II - One Night Live in Australia '95
 
 The title of this DVD is misleading, as it is not their complete concert from Sydney Australia.This is the same DVD that has been released as ""Access All Areas"".It consists of interviews with the bands members, intermixed with concert footage.It is still a very good production and I recommend it to any ELO/ELO part2 fans. I was a little disappointed as it wasn't what I was expecting as I already own a copy of Access All Areas."
-359,positive,negative,0.99682,88,mixed_or_contrast_language,"the best but only this time
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,359,positive,negative,0.99682,88,mixed_or_contrast_language,"the best but only this time
 
 pampers makes the best diapers with the most varieties for your needs. however their collect points promotion is misleading. by the time you save up any worthwhile points your child will have outgrown the selection. also the shipping and handling fees out weigh the cost at any store. dishonest and mean spirited. next child will use lesser quality diapers but from a company with more integrity."
-367,negative,positive,0.992987,50,other_or_domain_specific,"FIRMWARE FIXED IT
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,367,negative,positive,0.992987,50,other_or_domain_specific,"FIRMWARE FIXED IT
 
 I just updated to the newest firmware (1.5 4/12/2007) and the disc is now PLAYABLE in my XA2. Big relieve for all I hope. Review of the source to follow."
-370,negative,positive,0.935569,53,mixed_or_contrast_language,"Contrived
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,370,negative,positive,0.935569,53,mixed_or_contrast_language,"Contrived
 
 Not much of a book but maybe entertaining for those who want a book for the beach. Tracy Chevalier's book, The Girl With the Pearl Earring, is a much more engaging treatment of the same topic (Vermeer.)"
-382,positive,negative,0.995927,142,mixed_or_contrast_language,"Typos Galore
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,382,positive,negative,0.995927,142,mixed_or_contrast_language,"Typos Galore
 
 I'm almost finished with The Fall of Reach and while I love the story, the editors need to be shot. Wherever there is a word that has the letters ""f"" and ""i"" together, they're missing; ie: file is le, and officer is of cer. I think there's a date typo too where it's supposed to be the day after and they didn't change it. It's a little confusing and takes from the read when you have to pause and figure out what's being said. I'll update or comment when I finish the other 2 books, hopefully they're not as bad."
-398,positive,negative,0.997414,120,mixed_or_contrast_language,"Achtung!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,398,positive,negative,0.997414,120,mixed_or_contrast_language,"Achtung!
 
 This movie left me on the edge of my seat and short of breath. Once just wasn't enough in the theater. I just had to see it again on the big screen. I never used to be into movies with subtitles. But the effect just isn't the same as it is in its native tongue. Just when I thought it's over, it just takes you on another turn and another and another!!! If you like fast paced, unpredictable action with a soundtrack that fits its movie like a glove, this one's for you."
-399,negative,positive,0.955817,128,mixed_or_contrast_language,"I'm glad I'm not the only one....
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,399,negative,positive,0.955817,128,mixed_or_contrast_language,"I'm glad I'm not the only one....
 
 This phone was fantastic for about 8 months. I could go about 100 yards from my house while talking without any interference. However in the last month the handset started ""Channel Searching"" no matter how close I was to the base and how good the signal. Two days ago the handset went into channel search mode and literally has not stopped searching since. I have done everything I can think of including change the battery and it continues to search and while it searches the answering machine doesn't seem to work. Oh well, no more Sony for me."
-412,negative,positive,0.995962,154,negation_language,"Hope springs eternal
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,412,negative,positive,0.995962,154,negation_language,"Hope springs eternal
 
 I would truly, truly like to review this book, in either a negative vein, or glowing positively - thrilled with it's boundless content. Unfortunately, I haven't actually received the book in question, so there's really not a lot to say. In my heart I keep hoping that it will be delivered one day, any day, sooner rather than later would be nice. And, after the headlong rush of reading and absorbing the copious content (it's a big book after all I've been told), I hold addional hope that I will still have sufficient drive to get that real review out the door and on to the pages of Amazon where it belongs. Maybe next month - see you then!"
-413,positive,negative,0.820697,82,mixed_or_contrast_language,"P=Perfectly different
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,413,positive,negative,0.820697,82,mixed_or_contrast_language,"P=Perfectly different
 
 This is not a typical Kinsey Milhone mystery and unless you are a hard-core Grafton fan you might not like this one. This one has alot of stuff on Medicare and Social Security regs and this can be dull but in Grafton's (Kinsey's) hands it isn't. Best moment when Kinsey realizes she bugging the wrong suspect."
-450,negative,positive,0.858604,135,negation_language,"LOVE Jim Croce, the ""remastering"" sucks!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,450,negative,positive,0.858604,135,negation_language,"LOVE Jim Croce, the ""remastering"" sucks!
 
 The remastering makes the recording tinny & lacks depth.Sad thing to do to Jim Croce's music.This was the BEST album made, the music was originally some of the most beautiful, earthy, talented music ever recorded...There may have been some poorly remastered dicks & some not? so you might want to take a chance & see what it sounds like to you. I did NOT get mine here, so cold have been a bad run???The album is fantastic! Jim Croce died WAY too young. He was VERY talented."
-468,positive,negative,0.975916,81,mixed_or_contrast_language,"So far, so good... but found elsewhere for less $$$!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,468,positive,negative,0.975916,81,mixed_or_contrast_language,"So far, so good... but found elsewhere for less $$$!
 
 Put it in my pantry tonight, and it caught 2 moths within 15 minutes, so something is working!That being said, I actually bought this at Home Depot for only $5.78+tax! This really casts doubt on Amazon's claim that the list price is $11.11 ..."
-474,negative,positive,0.996621,227,mixed_or_contrast_language,"Good Movie, but Best Picture of the Year?
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,474,negative,positive,0.996621,227,mixed_or_contrast_language,"Good Movie, but Best Picture of the Year?
 
 This was a good action flick, and all the fights and battles are great. Russel Crowe does a great job and deserves praise. But the movie doesn't flow logically. The reasons Crowe was made a slave aren't clear... he's crying at the death of his family, and a foot appears... next he's a slave. This coming from the man who has fought his way out of so many battles, including death in Germany when the current ruler was overthrown. There are several moments where I wasn't sure why things were happening. That's okay for an action flick, but I expect more from the Academy. Are we ready to throw plot development out the window when the action is good? Man, I hope not! By the way, the recreation of Rome was awesome, another plus for the movie. So why did I give it only two stars? Well, to be honest, in protest over the Academy's nomination... not that the field was all that great this year..."
-479,negative,positive,0.835781,99,mixed_or_contrast_language,"nice product
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,479,negative,positive,0.835781,99,mixed_or_contrast_language,"nice product
 
 My wife loves it but we unfortunately perchaced the wrong size. She made a coment about the sizing chart being in dress sizes and she picked the size she is and we received it and the apparel was way too small. We have been meaning to exchange it but its tough to get time being as we have new born twins. That's why she wanted the apparel. She was really excited to receive the part and was disappointed when it didn't fit."
-495,positive,negative,0.90603,169,mixed_or_contrast_language,"Some people...
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,495,positive,negative,0.90603,169,mixed_or_contrast_language,"Some people...
 
 Do you find it interesting that all the people giving this excellent book a rating of one have dozens of spelling and grammar errors in their reviews? I think that is just about the least shocking thing I have ever seen. And can anyone tell me where the schools that ""make"" students read Tolkien are? At my school we have to read crap like ""The Scarlet Letter"". I am jealous of you people who were ""forced"" to read this book! In the sixth grade my teacher suggested that I read ""The Hobbit"" and L.O.T.R. Since then I have been a Fantasy MANIAC! I followed it up with Terry Brooks and Death Gate and I haven't stopped yet. I owe it all to The Hobbit! How could anyone not like this book?"
-521,positive,negative,0.898881,232,mixed_or_contrast_language,"Enjoyable BUT....
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,521,positive,negative,0.898881,232,mixed_or_contrast_language,"Enjoyable BUT....
 
 I thoroughly enjoyed this book but, if you are looking for details and insight from ""the man himself"" re: Frank Zappa's extensive body of recorded works, then you will be sorely dissapointed.The first chunk of the book is mostly about his childhood and the last half or so is devoted to barbed essays on a miscellany of dis-jointed topics such as politics, raising a family, inventions that Zappa couldn't get funded, etc. In the middle you get a smattering of chronology describing the formation and first few years run of the original Mothers of Invention... Zappa's musical exploits through the 70's and 80's is nearly completely ignored!!, ...Instead of devoting numerous pages to tedious diatribes concerning the PMRC Music Labelling initiative, (which now seems like a historical ""non-issue""), I would have far preferred to have read an album-by-album review by Zappa offering insight into each of the tracks and any related anecdotes behind their creation."
-535,positive,negative,0.96645,80,mixed_or_contrast_language,"Now I know why it is such a favorite.
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,535,positive,negative,0.96645,80,mixed_or_contrast_language,"Now I know why it is such a favorite.
 
 I was an English Lit. major, and never a big fan of Dickens. He is too long winded. But this book seemed too short. It's not that I felt that it was incomplete. I just enjoyed it so much that I wanted more.Do yourself a favor, and read it at christmas time. I did."
-544,negative,positive,0.995509,92,mixed_or_contrast_language,"Merry Jewel
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,544,negative,positive,0.995509,92,mixed_or_contrast_language,"Merry Jewel
 
 This is the closest thing to mainstream folk Christmas album anyone will get. Although there are backing vocals and an orchestra thrown in for extra holiday glee, this still sticks to a campfire sing-a-long feel. Jewel's vocals stray close to yodeling territory without getting too uncomfortable.A Holiday Collection remains not as exciting as other season albums, even with a helping hand from a jingled-up version of ""Hands."""
-545,negative,positive,0.997653,42,negation_language,"it sounds great!~!~!~!~!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,545,negative,positive,0.997653,42,negation_language,"it sounds great!~!~!~!~!
 
 it sounds great im just wondering y it did not already have 5 stars! di u think it would be great 4 my 12 year old?"
-547,positive,negative,0.996488,76,mixed_or_contrast_language,"Not the best book ever, but it is up there.
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,547,positive,negative,0.996488,76,mixed_or_contrast_language,"Not the best book ever, but it is up there.
 
 This book made me order the rest of the series, and even tempted me to buy the ones written by his son, despite the horrible reviews they've been given on here. You will lose yourself in the world Mr. Herbert spins. The 2 movies made from this book don't do it justice."
-566,positive,negative,0.949936,64,mixed_or_contrast_language,"That's The Way It Is
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,566,positive,negative,0.949936,64,mixed_or_contrast_language,"That's The Way It Is
 
 RCA/BMG, Warner and anyone that sells Elvis products, know that the ""hardcore"" fans will buy just about anything related to Elvis. As to this DVD set, could it have been better? Yes. But I don't really have any big problem with it."
-575,positive,negative,0.988786,220,mixed_or_contrast_language,"some tropicalia in your pants.....
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,575,positive,negative,0.988786,220,mixed_or_contrast_language,"some tropicalia in your pants.....
 
 i must say that if you don't hear the very intense influence of the most brilliant 60's tropicalia band Os Mutantes here, you must be deaf. I give them props for letting themselves be influenced by such an incredible, revolutionary band of Brazilian tropicalia geniuses.....but in the end, wouldn't you just want to listen to the Mutantes???Buy it anyway, this isn't run of the mill by any means. These guys, much like Mr. Kurt Heasley of the Lilys, know the art of intelligent, complicated songcraft in the sway of the fantastic sounds of the 60's with a slight modern twist. And for a time where music was NEW, where guitar had never been heard like that before, what better than to pay homage to such an important time in pop history??? The Wondermints do it right, and you better do it right than do it at all. otherwise you just look ridiculous. purchase, my friends."
-580,negative,positive,0.98791,176,mixed_or_contrast_language,"5.1 ADVICE
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,580,negative,positive,0.98791,176,mixed_or_contrast_language,"5.1 ADVICE
 
 Be careful when ordering this DVD. It is recorded in either DTS and Dolby Digital 5.1. Make sure your RECEIVER processes DTS otherwise buy the Dolby Digital version. Most all DVD players read and send a DTS & Dolby Digital signal to your receiver but make sure your receiver processes DTS and/or Dolby Digital before you make your decision. I have the DTS version but no DTS processer and had to select the enhanced stereo setting. On the other hand the sound is still impressive. So far no other DVD I've purchased compares in overall quality. I'm convinced this is the best way to enjoy music. I've stopped buying CDs and only buy music DVDs now. I'm waiting for my old classics to be re-mixed to 5.1 sound with some clips from concerts."
-582,negative,positive,0.629524,118,mixed_or_contrast_language,"A decent album, I've heard a lot better though...
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,582,negative,positive,0.629524,118,mixed_or_contrast_language,"A decent album, I've heard a lot better though...
 
 Although I'll admit this CD has its charms, I firmly believe that it should not garner a five star rating. The detriments to this album include the following: first, the album is full of Lauryn Hill speaking inane lyrics that faintly resemble some sort of electronica instrument; second, the songs lack differentiation (as in they are mostly the same beat.); and finally, the bitter lyrics really give me a headache. (Disregard the rambling run-on sentances.)"
-594,positive,negative,0.997279,182,mixed_or_contrast_language,"A book for the ages
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,594,positive,negative,0.997279,182,mixed_or_contrast_language,"A book for the ages
 
 I mistakenly checked this book out of the library when I was in 4th grade (1964), thinking it was going to be about knights (""The Silver Sword""). Imagine my surprise when, upon reading the first page, I discovered it was about a young boy (my age) separated from his family during WWII. Yet, even that first page sucked me in. I was not an avid, or even a good reader at that age, but I couldn't put it down, and finished the book in two days. I proceeded to check it out at least once a year until I could no longer find it in libraries. It was probably the single biggest reason I learned to love reading. My son is now in 4th grade, and I logged on to see if I could find it, and will make sure it becomes a part of his life as well."
-601,negative,positive,0.988106,92,mixed_or_contrast_language,"one time cooker
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,601,negative,positive,0.988106,92,mixed_or_contrast_language,"one time cooker
 
 This rice cooker is good for one time cooking. The rice does not last more than 12 hours. I usually leave my rice for 4 days so that I do not have to keep cooking it (lazy). I returned it and bought Cukoo rice cooker (made in Korea). The rice lasts for 4 days without changing color or get old. Cukoo is more expensive but it will last for years."
-633,positive,negative,0.942692,95,negation_language,"FATAL ATTRACTION INTRIGUE
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,633,positive,negative,0.942692,95,negation_language,"FATAL ATTRACTION INTRIGUE
 
 JUST WANT TO SAY IT'S A MOVIE THAT KEEPS YOU ON THE EDGE OF YOUR SEAT NO MATTER HOW MANY TIMES YOU SEE IT. I SEE SOMETHING DIFFERENT EVERYTIME. I HAVE A QUESTION. WHAT IS THE LITTLE GIRLS NAME IN THE MOVIE? WAS IT ELLIE? WHAT'S HER REAL NAME? HAS SHE BEEN IN ANYMORE MOVIES? SHE WAS GREAT IN THE SHOW AND LOOKS LIKE A POSSIBLE ACTRESS TO REMEMBER. THANKS FOR ANY HELP OR ANSWERS."
-651,positive,negative,0.51675,80,mixed_or_contrast_language,"Possibly the most depressing ending ever
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,651,positive,negative,0.51675,80,mixed_or_contrast_language,"Possibly the most depressing ending ever
 
 I'll make this short.This was a short, quickly read book and a very worth while read. The old man is very admirable.I enjoyed the book and understood why it had to end the way it did but still left me feeling like some one had punched me in the stomach.Read it, it was good but depressing."
-658,positive,negative,0.995557,49,other_or_domain_specific,"what are they talking about
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,658,positive,negative,0.995557,49,other_or_domain_specific,"what are they talking about
 
 have they even listened to the albumgreat recordnot a sophmore slump thats for surei can set my cd player to random and be happy all daynot a song on the album that i dislike"
-676,positive,negative,0.848497,89,mixed_or_contrast_language,"Pretty Darn Good
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,676,positive,negative,0.848497,89,mixed_or_contrast_language,"Pretty Darn Good
 
 I normaly spend my time cringing at the writing of computer science authors. This book is fairly straight forward. It skips a beat here and there, but not so much that it stops one dead in the tracks. It is an exhaustive read and only on the basics. I thought that more depth is eventually needed when Cocoon gets finalized, but this is about as good as it gets right now."
-678,negative,positive,0.742702,147,mixed_or_contrast_language,"For the Archives
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,678,negative,positive,0.742702,147,mixed_or_contrast_language,"For the Archives
 
 There is some history that is still relevant today and there is other that should be recognized as influential in its time, then filed away. I own this on vinyl and have framed both the cover and the record as decoration. I never saw a need to replace it on CD, for the simple reason that songs like ""When I'm 64"" and ""With A Little Help From My Friends"" are badly dated, not really standing the test of time. On the other hand, another 1967 release, ""Are You Experienced"" by Jimi Hendrix, is still challenging musicians today. This cover is also on the wall, but the CD is in the player. Big difference. 2-stars at best for Pepper."
-680,positive,negative,0.985534,198,mixed_or_contrast_language,"part 1
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,680,positive,negative,0.985534,198,mixed_or_contrast_language,"part 1
 
 I believe that this book is preety cheap.When I bought it I was so enthusiastic to learn math, exept for the procrastinations intervening with the main plot, which I consider a very constant, consistent, and reliable flow of information; explaining very deltailed, which formula you need to apply in which situation. Despite the statements which I have claimed about the quality of the book ""Cheap"", I still believe it passes my test by a mile, and it's explanations are extraordinary, namely for beginners. You can't even start to anticipate how this book altered my math grade. Instead of arbitrarily electing some sequence for the formulae, he invents his own effective process. I recommend this book to all the folks, who have a B,A. So that they can progress and have an A+ :)For the jungens, with C's they would presumably not understand the context."
-691,positive,negative,0.994617,77,mixed_or_contrast_language,"Not Free SF Reader
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,691,positive,negative,0.994617,77,mixed_or_contrast_language,"Not Free SF Reader
 
 Bean, the Brother, and the woman.Card continues to explore his Enderverse, and this time the story is set after the war, and on Earth as Bean and Peter become deeply involved in the politics and plots of the time.Nasty conspiracies for all.Not as good as some of the others, but still a good book."
-717,positive,negative,0.958891,53,negation_language,"Every Christian should read this book!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,717,positive,negative,0.958891,53,negation_language,"Every Christian should read this book!
 
 The church has not acted with love toward the Jewish people. This book explains why we, as Christians, should be more appreciate of them and why we owe them a debt of gratitude. Be prepared to learn a lot!"
-737,negative,positive,0.976587,129,negation_language,"My Least Favorite Orson Scott Card Book
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,737,negative,positive,0.976587,129,negation_language,"My Least Favorite Orson Scott Card Book
 
 This was my least favorite Orson Scott Card book to date, by far. I've read all the Ender's Series, the Shadow series up to the end of Shadow Puppets, and the Empire series.I could barely finish this book; it grated me. If it were a movie, only 40 minutes of 4 hours was any good. The only reason I finished it was b/c it's essential to understand the next book in the series.-Finished on 2012-08-27 (116,804 words in 7 days; 16,686 wpd)."
-751,positive,negative,0.984309,40,negation_language,"Luck of the Irish
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,751,positive,negative,0.984309,40,negation_language,"Luck of the Irish
 
 I bought this CD as a Christmas present for my wife who is Irish...she loves it....so do I and I'm not Irish."
-757,negative,positive,0.95606,163,mixed_or_contrast_language,"the movie is great, but the two on dvd i received are NOT coded for the USA!!!
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,757,negative,positive,0.95606,163,mixed_or_contrast_language,"the movie is great, but the two on dvd i received are NOT coded for the USA!!!
 
 this is suppose to be a multi-national, coded dvd, but 2 for 2 were rejected by my new dvd player. i then placed both into my lap-top and a message displayed that 2/5 codes worked while 3 were inactive (USA, being 1/3 inactive codes). so, don't purchase this dvd unless you watch it on your computer online. HOWEEVER, the movie is excellent!!! it is totally clean, comical, with some drama, romance, and warmth of humanity. so i have cept one of the 'not coded for the USA' copies for my laptop, because i cannot get it anyother way apparently. NOT EVEN FROM AMAZON!"
-760,negative,positive,0.997474,22,other_or_domain_specific,"College book
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,760,negative,positive,0.997474,22,other_or_domain_specific,"College book
 
 Thank you for sending the book fast so that I could start reading it for my college class"
-764,negative,positive,0.988891,216,mixed_or_contrast_language,"Arabian Prince bombs on his comeback CD...
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,764,negative,positive,0.988891,216,mixed_or_contrast_language,"Arabian Prince bombs on his comeback CD...
 
 I got this CD not too long ago, I expected songs similar to the album 'Brother Arab', but Arabian Prince changed up his style. Now he used slow synthed strings, and more sexual lyrics then before. He found another rapper named Side Show to help back him up, probably because Arabian Prince wasn't use to this kind of rap style. The album had the gangsta beat with too much emphasis on b-tches and f----n. There are maybe three tracks that are enjoyable to listen to, but the other ones sound to repetitive or just too slow. The highlight of the album is the song ""Underworld"" when Arabian Prince brings back a fast tempo song about the ghetto. The best slow-synth song would be ""Ho's 2 Bozack"". A.Prince brings a lot of the NWA's production crew to make the album. I don't have the import version of this album, but i think there are maybe one or two bonus songs."
-784,positive,negative,0.714385,28,negation_language,"Wow
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,784,positive,negative,0.714385,28,negation_language,"Wow
 
 Once I started this book I could not put it down. There was no mercy on this family. What a page turner!"
-806,positive,negative,0.996968,77,mixed_or_contrast_language,"there's nothing better than live rolling stones
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,806,positive,negative,0.996968,77,mixed_or_contrast_language,"there's nothing better than live rolling stones
 
 i own three rolling stones albums now, but there's nothing like listening to them live on cd. there are two new studio tracks on the cd. at first, i thought they had covered ""sex drive"" by twisted sister and w.a.s.p., but a closer listen brung up different lyrics."
-815,negative,positive,0.998382,40,negation_language,"God's and Kings: Chronicles of the Kings #1
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,815,negative,positive,0.998382,40,negation_language,"God's and Kings: Chronicles of the Kings #1
 
 This was a great book to read. I had a hard time putting it down! Can not wait to read the next one!"
-840,positive,negative,0.685079,207,mixed_or_contrast_language,"Fantastic but
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,840,positive,negative,0.685079,207,mixed_or_contrast_language,"Fantastic but
 
 The design of this basketball system is fantastic. It is so easy to move and so easy to raise or lower the backboard. It is sturdier than most movable systems and with the 4 wheels and the leaver action you can easily move it from one place to the other without emptying the reservoir. If it is a windy day you can easily lower the back board. Now that I have raved about the product let me give you the negative, if you are not mechanically inclined, do not even attempt to put this together. The directions are terrible and there are a lot of moving parts. After putting it together there are a lot of left over nuts and bolts and you wonder what you have forgotten, but the directions are very bad so you had to guess at what they meant. So I recommend that you hire someone to put this together which is what we had to do to get this put up. Took the person many hours to get it together and he was not working by an hourly rate."
-846,negative,positive,0.998008,171,other_or_domain_specific,"bling bling
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,846,negative,positive,0.998008,171,other_or_domain_specific,"bling bling
 
 man, this album is phat. the title track, ""F the BS"", and ""Buttermilk Bisquick"", have more sweet raps than all of p-diddy's albums put together. mix-a-lot has been dropping tricked-out heat rocks longer than anyone in the biz, and it shows on this record. he has elevated himself to the level of Abraham Lincoln, Ghandi, and Hitler with his pure genius. nothing on earth has ever touched me in such a way as this sweet album. ever since i picked up the 12"" lp ... i have been a better person. rap on, mixy, rap on, and let those B.G.'s eat your dust, you loc-ed out O.G.holla"
-904,positive,negative,0.996673,140,negation_language,"When did Grandpa die and what do we tell the kids?
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,904,positive,negative,0.996673,140,negation_language,"When did Grandpa die and what do we tell the kids?
 
 Grandma and a brother? That's just weird. I'm a Grandfather of a Five year old Granddaughter and I, I!, bought my Granddaughter the dollhouse and the full set of house furniture. What the, no, wtf were they thinking? Simpletons rule the fricking world. Grandma? Grandpa. Brother? Sister. Idiots.That said my Granddaughter loves this entire set. Full on wonderful for her, and yes if they came out with Grandpa with a sister I would buy both sets, throw the older brother away and give her the rest so maybe their not idiots, just soulless vampires."
-917,positive,negative,0.811103,57,mixed_or_contrast_language,"The Gladiator
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,917,positive,negative,0.811103,57,mixed_or_contrast_language,"The Gladiator
 
 I first saw this movie when it came out fifteen or twenty years ago and got it on video. I have been trying to get it on DVD for years, but it is not available in Australia. Thanks to Amazon I can watch it again and again."
-919,positive,negative,0.977467,61,other_or_domain_specific,"correction to a previous review
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,919,positive,negative,0.977467,61,other_or_domain_specific,"correction to a previous review
 
 The word ""robot"" comes from the Czech word ""robota,"" which in English means ""corvee,"" the obliged labor or servitude that vassals (such as serfs or peasants) had to perform on the lords' estates."
-925,positive,negative,0.975461,101,negation_language,"You Get What You Pay For
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,925,positive,negative,0.975461,101,negation_language,"You Get What You Pay For
 
 This is not a bad product, at all. As with most camping equipment, a lower price means lower quality. If you purchase this item knowing this, then you won't be disappointed. The grill is not all that tall, so you have to let the fire burn down to coals before putting this over it. We used it mostly to hold up a small propane stove to allow for better air circulation underneath, and it worked spectacularly for that!"
-953,positive,negative,0.996778,111,mixed_or_contrast_language,"This book has potential
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,953,positive,negative,0.996778,111,mixed_or_contrast_language,"This book has potential
 
 Ok, I am kind of stuck. I am trying to find the real meaning of ""Shane"", but with no avail. I KNOW there is a meaning, all the adults talk about it...but what is it? And, what are all the 'little' meanings (ex. What is the meaning of the stump? Does it show that Joe and Shane work well together?) PLEASE help me! email me or something. I am in 8th Grade and I just got done with the book. help."
-972,negative,positive,0.995372,251,negation_language,"nice trainers........
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,972,negative,positive,0.995372,251,negation_language,"nice trainers........
 
 the asics mexico 66 are the nicest trainers i have ever had - which is why i was so desparate to get hold of another pair - and when the black/grey/gold ones appeared not to be available in the uk i decided to buy them over the internet - sadly eastbay sent me the wrong colour - and whilst they have refunded me the value of the shoes - they haven't done the same with the duty and postage costs which are more than i paid for the shoes themselves. I have also now spent quite alot of money chasing up and trying to get this money back as eastbay assured me i was entitled to it.....and am just about to start the process all over again.....if shopping with them i hope you have a better experience.....second time round i have been impressed by the friendliness and efficiency of the eastbay staff - don't know whether i'll get the $116 (not including the purchase price which has been refunded now) that i am owed.....i think thats down to amazon....fingers crossed i guess"
-992,positive,negative,0.623455,209,mixed_or_contrast_language,"Sublime Voice; Songs don't always measure up
+amazon-polarity-seed-42-full-final-test,mteb/amazon_polarity,test,44,full,992,positive,negative,0.623455,209,mixed_or_contrast_language,"Sublime Voice; Songs don't always measure up
 
 Clay's voice soars to new territory on this CD, particularly on songs like ""Touch"" and ""Run to Me"" and ""Invisible"", which could otherwise be categorized as ho-hum pop music, if Clay wasn't singing them. The lyrics are a little corny, but Clay makes them sound sincere. The vocal range of most of these songs is not very great, and thus they don't properly show off Clay's unique tenor to-die-for voice.I wish that the ""experts"" who molded some of these songs would have kept their involvement in the project to a minimum, and left the songs pure, instead of processing them with pop synthesizer sounds. I can hear that on any modern day pop album, and it is not very special. On the other hand, I can only hear Clay's voice on a few CD's. And his true voice is great enough that it shouldn't be crowded by synthesizer warble."

@@ -119,6 +119,36 @@ python scripts/analyze_errors.py
 
 All 76 mistakes are recorded in `results/final_test/errors.csv`, with a summary and the ten highest-confidence mistakes in `results/final_test/error_analysis.json`.
 
+### Artifact traceability
+
+The result files are connected by the following reproducible chain:
+
+```text
+results/full/config.json
+        +
+results/full/metrics.json
+        |
+        v
+results/model_selection.json  (full selected by validation Macro-F1)
+        |
+        v
+models/best/                  (ignored weights used for inference)
+        +
+cached canonical test subset (mteb/amazon_polarity, seed 44)
+        |
+        v
+results/final_test/metrics.json
+results/final_test/confusion_matrix.png
+        |
+        v
+scripts/analyze_errors.py
+        |
+        +-- results/final_test/errors.csv
+        `-- results/final_test/error_analysis.json
+```
+
+Both error artifacts use run ID `amazon-polarity-seed-42-full-final-test`. Every CSV row repeats the dataset, canonical split, subset seed, and selected experiment, so the file remains understandable when opened alone. The JSON contains a fuller provenance block, a snapshot of final metrics, source-artifact paths, label mapping, model-selection record, and generating script. `test_index` maps each error back to its row in the cached deterministic final-test subset.
+
 | Observation | Measured count | Interpretation |
 |---|---:|---|
 | Negative predicted positive | 36 | False-positive sentiment errors |

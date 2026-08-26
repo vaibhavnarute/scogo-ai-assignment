@@ -1,4 +1,64 @@
 {
+  "run_id": "amazon-polarity-seed-42-full-final-test",
+  "provenance": {
+    "generated_by": "scripts/analyze_errors.py",
+    "relationship": "distilbert-base-uncased -> independent training experiments -> validation Macro-F1 selection -> models/best -> final test evaluation -> these errors",
+    "base_model": "distilbert-base-uncased",
+    "dataset": "mteb/amazon_polarity",
+    "canonical_split": "test",
+    "subset_seed": 44,
+    "subset_size": 1000,
+    "label_mapping": {
+      "0": "negative",
+      "1": "positive"
+    },
+    "max_length": 256,
+    "selected_model": {
+      "selected_experiment": "full",
+      "validation_macro_f1": 0.9409900273146161
+    },
+    "source_artifacts": {
+      "training_config": "results/full/config.json",
+      "validation_metrics": "results/full/metrics.json",
+      "model_selection": "results/model_selection.json",
+      "final_test_config": "results/final_test/config.json",
+      "final_test_metrics": "results/final_test/metrics.json",
+      "final_test_confusion_matrix": "results/final_test/confusion_matrix.png",
+      "all_error_rows": "results/final_test/errors.csv"
+    },
+    "final_test_metrics_snapshot": {
+      "accuracy": 0.924,
+      "confusion_matrix": [
+        [
+          464,
+          36
+        ],
+        [
+          40,
+          460
+        ]
+      ],
+      "loss": 0.3032056391239166,
+      "macro_f1": 0.9239987839805437,
+      "macro_precision": 0.9240271377368151,
+      "macro_recall": 0.924,
+      "per_class": {
+        "negative": {
+          "f1": 0.9243027888446215,
+          "precision": 0.9206349206349206,
+          "recall": 0.928,
+          "support": 500
+        },
+        "positive": {
+          "f1": 0.9236947791164659,
+          "precision": 0.9274193548387096,
+          "recall": 0.92,
+          "support": 500
+        }
+      },
+      "selected_experiment": "full"
+    }
+  },
   "analysis_guardrail": "Post-hoc reporting on the final test set only; these observations were not used for model selection or tuning.",
   "total_test_examples": 1000,
   "total_errors": 76,
@@ -15,6 +75,11 @@
   "high_confidence_error_count": 57,
   "top_high_confidence_errors": [
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 815,
       "true_label": "negative",
       "predicted_label": "positive",
@@ -24,6 +89,11 @@
       "text": "God's and Kings: Chronicles of the Kings #1\n\nThis was a great book to read. I had a hard time putting it down! Can not wait to read the next one!"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 328,
       "true_label": "negative",
       "predicted_label": "positive",
@@ -33,6 +103,11 @@
       "text": "thank you\n\nThis one gift I could give my grown daughter. I read this book over and over to her as a child. It was in wonderful condition!"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 23,
       "true_label": "positive",
       "predicted_label": "negative",
@@ -42,6 +117,11 @@
       "text": "Wrong color sent\n\nThe item itself is very good; however, I ordered 3 different colors, one of which you did not send (yellow rainbow). Instead, you sent 2 Medieval Blues and one Blue Hawaii. I was disappointed not to receive the color I had specified, especially since the girl that took the order stated that all 3 colors were in stock."
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 846,
       "true_label": "negative",
       "predicted_label": "positive",
@@ -51,6 +131,11 @@
       "text": "bling bling\n\nman, this album is phat. the title track, \"F the BS\", and \"Buttermilk Bisquick\", have more sweet raps than all of p-diddy's albums put together. mix-a-lot has been dropping tricked-out heat rocks longer than anyone in the biz, and it shows on this record. he has elevated himself to the level of Abraham Lincoln, Ghandi, and Hitler with his pure genius. nothing on earth has ever touched me in such a way as this sweet album. ever since i picked up the 12\" lp ... i have been a better person. rap on, mixy, rap on, and let those B.G.'s eat your dust, you loc-ed out O.G.holla"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 183,
       "true_label": "positive",
       "predicted_label": "negative",
@@ -60,6 +145,11 @@
       "text": "Loose Weight the Healthy way\n\nI lost almost 20 pounds just by taking herbalife nothing really worked for me, i was so desperate didn't know what to do...I even try diet pills over the counter but i always got a side effect by taking them. I'm still loosing weight from 250 pounds to 160 pounds (oh yeah baby), Like the song says I'M BRINGING SEXY BACK YEAH! Make sure to use formula 1 shake mix and 3 protein, just replace a meal if you don't eat breakfast like me drink the shake every morning ....2 scoops of shake mix and 1 scoop of proteinand you'll see results NOT KIDDING!"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 545,
       "true_label": "negative",
       "predicted_label": "positive",
@@ -69,6 +159,11 @@
       "text": "it sounds great!~!~!~!~!\n\nit sounds great im just wondering y it did not already have 5 stars! di u think it would be great 4 my 12 year old?"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 138,
       "true_label": "negative",
       "predicted_label": "positive",
@@ -78,6 +173,11 @@
       "text": "this movie is available on iTunes!!!\n\nit's less than 20 bucks....so don't go spending anymore than that in this wonderful economy we have!!Cheers..Tony(NYC)"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 760,
       "true_label": "negative",
       "predicted_label": "positive",
@@ -87,6 +187,11 @@
       "text": "College book\n\nThank you for sending the book fast so that I could start reading it for my college class"
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 398,
       "true_label": "positive",
       "predicted_label": "negative",
@@ -96,6 +201,11 @@
       "text": "Achtung!\n\nThis movie left me on the edge of my seat and short of breath. Once just wasn't enough in the theater. I just had to see it again on the big screen. I never used to be into movies with subtitles. But the effect just isn't the same as it is in its native tongue. Just when I thought it's over, it just takes you on another turn and another and another!!! If you like fast paced, unpredictable action with a soundtrack that fits its movie like a glove, this one's for you."
     },
     {
+      "run_id": "amazon-polarity-seed-42-full-final-test",
+      "dataset": "mteb/amazon_polarity",
+      "canonical_split": "test",
+      "subset_seed": 44,
+      "selected_experiment": "full",
       "test_index": 594,
       "true_label": "positive",
       "predicted_label": "negative",
