@@ -1,0 +1,15 @@
+{
+  "base_model": "distilbert-base-uncased",
+  "device": "cpu",
+  "fit_objective": "validation_negative_log_likelihood",
+  "fit_split": "canonical train-derived validation subset",
+  "method": "single_scalar_temperature_scaling",
+  "model_selection": {
+    "selected_experiment": "full",
+    "validation_macro_f1": 0.9409900273146161
+  },
+  "model_weights_changed": false,
+  "temperature": 1.886450442498428,
+  "validation_seed": 43,
+  "validation_size": 1000
+}

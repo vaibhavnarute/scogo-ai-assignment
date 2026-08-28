@@ -222,6 +222,98 @@ Artifacts are self-describing and committed:
 
 These diagnostic scores must not be compared directly with the held-out Amazon Polarity test score: the challenge examples are deliberately adversarial, synthetic, small, and subjectively labeled.
 
+## Inference improvements: sliding windows, calibration, and mixed-sentiment diagnostics
+
+Two production-oriented improvements were added without changing or retraining the selected model weights.
+
+### Sliding-window inference
+
+Inference now tokenizes the complete review before deciding whether to chunk it. Reviews of 256 tokens or fewer use the original single-pass path. Longer reviews use deterministic overlapping windows:
+
+- Window size: 256 tokens, including special tokens
+- Stride: 64 overlap tokens
+- Aggregation: content-token-count-weighted mean of chunk probabilities
+- Label compatibility: the final label is selected from aggregated raw probabilities
+- Metadata: original token count, chunks used, chunking flag, window size, and stride
+
+Token-count weighting was chosen instead of confidence weighting because model confidence is known to be uncalibrated and should not automatically give a chunk more voting power.
+
+Measured only on the four existing long-review challenge examples:
+
+| Long-review diagnostic | Before | After sliding windows |
+|---|---:|---:|
+| Correct | 0/4 | 0/4 |
+| Reviews truncated | 4/4 | 0/4 |
+| Chunks used | 1 each | 2 each |
+
+Sliding windows **mitigated truncation but did not materially improve classification** on these four deliberately mixed long reviews. The decisive late text was processed, but weighted aggregation still favored the dominant evidence across the entire review. This limitation remains unresolved rather than being presented as a successful accuracy improvement.
+
+Artifacts:
+
+- `results/improvements/long_review/before.json`
+- `results/improvements/long_review/after.json`
+- `results/improvements/long_review/predictions.csv`
+
+### Validation-only temperature scaling
+
+Run calibration after a validation-selected model exists:
+
+```powershell
+python scripts/calibrate.py
+```
+
+The script collects logits from the existing 1,000-review validation subset, fits one positive scalar temperature by minimizing validation negative log-likelihood, and changes no model weight. The fitted temperature is `1.886450`.
+
+| Validation calibration metric | Raw | Calibrated | Change |
+|---|---:|---:|---:|
+| ECE | 0.04878 | **0.02076** | -57.5% |
+| Brier score | 0.10602 | **0.09802** | -7.5% |
+| NLL | 0.25713 | **0.18567** | -27.8% |
+| Accuracy | 94.1% | 94.1% | unchanged |
+| Mean confidence | 98.80% | 94.75% | closer to observed accuracy |
+
+All validation class labels remained unchanged. Calibration affects confidence interpretation, not classification accuracy.
+
+On the 28 diagnostic challenge examples, using the same validation-fitted temperature:
+
+| Confidence diagnostic | Raw | Calibrated |
+|---|---:|---:|
+| Mean confidence on correct predictions | 95.07% | 89.18% |
+| Mean confidence on incorrect predictions | 89.83% | 82.19% |
+| Wrong predictions above 90% confidence | 8 | 7 |
+| Wrong predictions above 95% confidence | 8 | **2** |
+
+Artifacts:
+
+- `results/calibration/temperature.json`
+- `results/calibration/metrics_before.json`
+- `results/calibration/metrics_after.json`
+- `results/calibration/reliability_diagram.png`
+- `results/improvements/calibration/challenge_confidence.json`
+- `results/improvements/calibration/challenge_predictions.csv`
+- `results/improvements/comparison_report.json`
+
+Generate isolated improvement comparisons with:
+
+```powershell
+python scripts/evaluate_improvements.py
+```
+
+The original validation, final-test, and challenge-suite artifacts remain unchanged. Sarcasm and negation adaptation are intentionally not promoted into the production model; they require isolated fine-tuning experiments and regression checks against normal Amazon validation performance.
+
+### Mixed-sentiment diagnostic guardrail
+
+The API now splits a review into at most 12 clauses, assigns transparent keyword-based aspect labels (`product`, `delivery`, `support`, `price_value`, `reliability`, or `usability`), and runs the same existing binary model on each clause. It sets `mixed_sentiment_detected` only when calibrated positive and negative clause predictions both meet the configurable 0.70 confidence threshold.
+
+On the four mixed-sentiment challenge examples, the original overall binary result remains **2/4**, while the guardrail identified mixed evidence in **4/4**. This is a diagnostic improvement, not a trained aspect-sentiment model and not an accuracy improvement. Evidence text is returned with each aspect prediction so a viewer can understand why the guardrail fired.
+
+Artifacts:
+
+- `results/improvements/mixed_sentiment/summary.json`
+- `results/improvements/mixed_sentiment/predictions.csv`
+
+Configuration is available through `ASPECT_CONFIDENCE_THRESHOLD` and `ASPECT_MAX_SEGMENTS`.
+
 ## API
 
 Start the production-style inference service:
@@ -236,13 +328,32 @@ Open <http://127.0.0.1:8000/docs>. Example request:
 {"text": "The build quality is terrible and it stopped working."}
 ```
 
-Example response shape (the confidence shown here is illustrative, not a claimed model result):
+Example response shape (confidence values shown here are illustrative):
 
 ```json
-{"sentiment": "negative", "confidence": 0.9721}
+{
+  "sentiment": "negative",
+  "confidence": 0.9721,
+  "calibrated_confidence": 0.9112,
+  "original_token_count": 14,
+  "chunks_used": 1,
+  "was_chunked": false,
+  "window_size": 256,
+  "stride": 64,
+  "calibration_applied": true,
+  "aspects": [
+    {
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "confidence": 0.86,
+      "evidence": "The build quality is terrible and it stopped working."
+    }
+  ],
+  "mixed_sentiment_detected": false
+}
 ```
 
-Whitespace-only input returns HTTP 422. `/health` remains available before training and reports whether the selected model artifact exists. The model itself loads lazily on the first prediction.
+`confidence` preserves the original raw softmax value for backwards compatibility; `calibrated_confidence` applies the validation-fitted temperature. Whitespace-only input returns HTTP 422. `/health` remains available before training and reports whether the selected model artifact exists. The model itself loads lazily on the first prediction.
 
 ## Gradio demo
 
@@ -260,7 +371,7 @@ pytest -q
 
 API tests replace the heavyweight predictor with a deterministic fake, so unit tests do not download or load DistilBERT. Training, dataset streaming, and real-model inference are integration activities invoked explicitly through the commands above.
 
-For the completed run, all six automated tests passed. Separate real-model smoke checks also passed for FastAPI (`/health`, `/predict`) and the shared Gradio prediction function.
+For the completed improvement run, all 20 automated tests passed. A separate real-model smoke check also processed both a short review and a 1,522-token review; the long review used eight chunks on CPU with calibration enabled.
 
 ## Artifacts and reproducibility
 

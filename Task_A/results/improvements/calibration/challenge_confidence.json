@@ -1,0 +1,14 @@
+{
+  "examples": 28,
+  "correct": 15,
+  "incorrect": 13,
+  "raw_average_confidence_correct": 0.9507333333333333,
+  "raw_average_confidence_incorrect": 0.8982692307692308,
+  "calibrated_average_confidence_correct": 0.8918466666666667,
+  "calibrated_average_confidence_incorrect": 0.8219076923076922,
+  "raw_wrong_confidence_gt_0_90": 8,
+  "raw_wrong_confidence_gt_0_95": 8,
+  "calibrated_wrong_confidence_gt_0_90": 7,
+  "calibrated_wrong_confidence_gt_0_95": 2,
+  "guardrail": "Challenge examples are diagnostic only; temperature was fitted solely on validation logits."
+}

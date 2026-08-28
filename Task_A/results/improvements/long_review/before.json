@@ -1,0 +1,43 @@
+{
+  "examples": 4,
+  "correct": 0,
+  "diagnostic_accuracy": 0.0,
+  "failures": [
+    {
+      "example_id": "long-01",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9658,
+      "token_count": 257,
+      "truncated": true
+    },
+    {
+      "example_id": "long-02",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.8446,
+      "token_count": 273,
+      "truncated": true
+    },
+    {
+      "example_id": "long-03",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9521,
+      "token_count": 294,
+      "truncated": true
+    },
+    {
+      "example_id": "long-04",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.9268,
+      "token_count": 286,
+      "truncated": true
+    }
+  ]
+}

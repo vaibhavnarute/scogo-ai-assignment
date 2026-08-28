@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.941,
+  "brier_score": 0.09801877493474073,
+  "class_labels_unchanged": true,
+  "ece": 0.020756384987847536,
+  "mean_confidence": 0.9475232825188604,
+  "nll": 0.18566830192123274,
+  "temperature": 1.886450442498428
+}

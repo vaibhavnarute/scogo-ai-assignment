@@ -104,6 +104,15 @@ def summarize(rows: list[dict[str, object]]) -> dict[str, object]:
 
 
 def main() -> None:
+    existing = [
+        settings.results_dir / "challenge_suite" / "predictions.csv",
+        settings.results_dir / "challenge_suite" / "summary.json",
+    ]
+    if any(path.exists() for path in existing):
+        raise FileExistsError(
+            "Original challenge artifacts are immutable. Use "
+            "scripts/evaluate_improvements.py for the improved inference path."
+        )
     suite = load_suite()
     predictor = Predictor()
     selection_path = settings.results_dir / "model_selection.json"

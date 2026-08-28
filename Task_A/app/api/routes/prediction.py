@@ -26,7 +26,7 @@ def predict_sentiment(
     predictor: Predictor = Depends(get_predictor),
 ) -> PredictionResponse:
     try:
-        result = predictor.predict(request.text)
+        result = predictor.predict_with_diagnostics(request.text)
     except (FileNotFoundError, RuntimeError) as exc:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(exc)

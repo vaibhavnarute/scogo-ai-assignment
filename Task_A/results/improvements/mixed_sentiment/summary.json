@@ -1,0 +1,7 @@
+{
+  "examples": 4,
+  "binary_correct": 2,
+  "mixed_guardrail_detected": 4,
+  "method": "heuristic clause/aspect extraction plus existing binary classifier",
+  "claim": "diagnostic guardrail, not a trained aspect-sentiment model"
+}

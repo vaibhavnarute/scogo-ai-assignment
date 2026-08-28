@@ -34,9 +34,18 @@ class Settings:
     weight_decay: float = _env_float("WEIGHT_DECAY", 0.01)
     seed: int = _env_int("SEED", 42)
     stream_shuffle_buffer: int = _env_int("STREAM_SHUFFLE_BUFFER", 10_000)
+    inference_window_size: int = _env_int("INFERENCE_WINDOW_SIZE", 256)
+    inference_stride: int = _env_int("INFERENCE_STRIDE", 64)
+    calibration_bins: int = _env_int("CALIBRATION_BINS", 15)
+    aspect_confidence_threshold: float = _env_float("ASPECT_CONFIDENCE_THRESHOLD", 0.70)
+    aspect_max_segments: int = _env_int("ASPECT_MAX_SEGMENTS", 12)
     models_dir: Path = PROJECT_ROOT / "models"
     results_dir: Path = PROJECT_ROOT / "results"
     data_cache_dir: Path = PROJECT_ROOT / ".cache" / "dataset"
+
+    @property
+    def calibration_path(self) -> Path:
+        return self.results_dir / "calibration" / "temperature.json"
 
     def as_dict(self) -> dict[str, Any]:
         data = asdict(self)

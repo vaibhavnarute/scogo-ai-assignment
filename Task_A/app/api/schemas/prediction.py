@@ -15,6 +15,24 @@ class PredictionRequest(BaseModel):
         return value
 
 
+class AspectPrediction(BaseModel):
+    aspect: str = Field(
+        pattern="^(product|delivery|support|price_value|reliability|usability)$"
+    )
+    sentiment: str = Field(pattern="^(negative|positive)$")
+    confidence: float = Field(ge=0.0, le=1.0)
+    evidence: str = Field(min_length=1)
+
+
 class PredictionResponse(BaseModel):
     sentiment: str = Field(pattern="^(negative|positive)$")
     confidence: float = Field(ge=0.0, le=1.0)
+    calibrated_confidence: float = Field(ge=0.0, le=1.0)
+    original_token_count: int = Field(ge=1)
+    chunks_used: int = Field(ge=1)
+    was_chunked: bool
+    window_size: int = Field(ge=3)
+    stride: int = Field(ge=0)
+    calibration_applied: bool
+    aspects: list[AspectPrediction] = Field(default_factory=list)
+    mixed_sentiment_detected: bool = False
