@@ -1,0 +1,203 @@
+{
+  "suite_id": "binary-sentiment-challenge-v1",
+  "purpose": "Diagnostic-only examples for difficult binary sentiment phenomena. This suite is not training, validation, or final-test data and must not be used for model selection.",
+  "label_policy": "Expected sentiment represents the dominant overall judgment in the text. Mixed examples remain inherently subjective because the model supports only positive and negative labels.",
+  "examples": [
+    {
+      "id": "sarcasm-01",
+      "category": "sarcasm",
+      "expected_sentiment": "negative",
+      "rationale": "Positive surface word followed by an obvious failure.",
+      "text": "Fantastic purchase. It stopped working before I even finished throwing away the packaging."
+    },
+    {
+      "id": "sarcasm-02",
+      "category": "sarcasm",
+      "expected_sentiment": "negative",
+      "rationale": "Gratitude is used sarcastically to criticize missing accessories.",
+      "text": "Exactly what I needed: a wireless keyboard with no receiver in the box. Thanks for the decorative paperweight."
+    },
+    {
+      "id": "sarcasm-03",
+      "category": "sarcasm",
+      "expected_sentiment": "positive",
+      "rationale": "A mock complaint emphasizes unusually strong battery life.",
+      "text": "Terrible problem to have: after three days of travel I still cannot get this battery to die."
+    },
+    {
+      "id": "sarcasm-04",
+      "category": "sarcasm",
+      "expected_sentiment": "negative",
+      "rationale": "Praise is contradicted by damage and an unusable product.",
+      "text": "Premium quality, apparently, if premium means a cracked screen and buttons that do absolutely nothing."
+    },
+    {
+      "id": "mixed-01",
+      "category": "mixed_sentiment",
+      "expected_sentiment": "negative",
+      "rationale": "Hardware praise is outweighed by an unusable required application and a return decision.",
+      "text": "The camera produces sharp photos and feels solid, but the required app disconnects every few minutes and deleted two transfers. I am returning it."
+    },
+    {
+      "id": "mixed-02",
+      "category": "mixed_sentiment",
+      "expected_sentiment": "positive",
+      "rationale": "Packaging criticism is outweighed by strong product satisfaction.",
+      "text": "The box arrived crushed and looked awful, yet the headphones inside were untouched, sound excellent, and have become my daily pair."
+    },
+    {
+      "id": "mixed-03",
+      "category": "mixed_sentiment",
+      "expected_sentiment": "positive",
+      "rationale": "A color complaint is minor; comfort and the decision to keep dominate.",
+      "text": "These shoes are not the blue shown online, which was disappointing, but they are the most comfortable pair I own and I am keeping them."
+    },
+    {
+      "id": "mixed-04",
+      "category": "mixed_sentiment",
+      "expected_sentiment": "negative",
+      "rationale": "A strong opening is outweighed by an ending that ruins the overall experience.",
+      "text": "The novel starts with wonderful characters and a gripping mystery, but the final chapters abandon every plot thread and completely ruined the book for me."
+    },
+    {
+      "id": "delivery-01",
+      "category": "product_vs_delivery",
+      "expected_sentiment": "positive",
+      "rationale": "Courier delay is explicitly separated from a five-star product judgment.",
+      "text": "The courier delivered it four days late, but that is not the product's fault. The mixer is powerful, quiet, and easily earns five stars."
+    },
+    {
+      "id": "delivery-02",
+      "category": "product_vs_delivery",
+      "expected_sentiment": "negative",
+      "rationale": "Fast delivery cannot compensate for a defective product.",
+      "text": "Shipping was impressively fast and the package was pristine. Unfortunately the monitor has a bright green line across the center, so it is unusable."
+    },
+    {
+      "id": "delivery-03",
+      "category": "product_vs_delivery",
+      "expected_sentiment": "positive",
+      "rationale": "Damaged outer packaging did not affect the product, which works perfectly.",
+      "text": "The outer carton was soaked and torn by the delivery company. The sealed product box protected everything, and the speaker works perfectly."
+    },
+    {
+      "id": "delivery-04",
+      "category": "product_vs_delivery",
+      "expected_sentiment": "negative",
+      "rationale": "Smooth replacement delivery is outweighed by a recurring product defect.",
+      "text": "Amazon replaced it overnight with no hassle, but the second unit has the same overheating problem as the first. The design itself is defective."
+    },
+    {
+      "id": "support-01",
+      "category": "support_complaint",
+      "expected_sentiment": "positive",
+      "rationale": "A failure was resolved immediately and the customer is satisfied overall.",
+      "text": "The first unit failed, but support answered in two minutes and sent a replacement the next morning. The replacement is excellent, and I am very satisfied."
+    },
+    {
+      "id": "support-02",
+      "category": "support_complaint",
+      "expected_sentiment": "negative",
+      "rationale": "An adequate product is outweighed by costly and dismissive support.",
+      "text": "The router is acceptable when it works, but support charged me for a call, blamed my internet provider, and closed the ticket without fixing anything. I will not buy from this brand again."
+    },
+    {
+      "id": "support-03",
+      "category": "support_complaint",
+      "expected_sentiment": "positive",
+      "rationale": "Confusing setup is outweighed by effective support and a good final outcome.",
+      "text": "Setup instructions were confusing, although the support agent patiently walked me through every step. It has worked flawlessly since then."
+    },
+    {
+      "id": "support-04",
+      "category": "support_complaint",
+      "expected_sentiment": "negative",
+      "rationale": "Repeatedly ignored support requests leave the paid service unusable.",
+      "text": "I sent five support messages over two weeks and received only automated replies. My paid account is still locked, making the service worthless."
+    },
+    {
+      "id": "negation-01",
+      "category": "negation",
+      "expected_sentiment": "positive",
+      "rationale": "The phrase 'not bad' expresses approval in context.",
+      "text": "Not bad at all; in fact, this may be the best inexpensive coffee grinder I have used."
+    },
+    {
+      "id": "negation-02",
+      "category": "negation",
+      "expected_sentiment": "positive",
+      "rationale": "Double negation resolves to a positive judgment.",
+      "text": "I cannot say I dislike it, and I would not hesitate to recommend it to a friend."
+    },
+    {
+      "id": "negation-03",
+      "category": "negation",
+      "expected_sentiment": "negative",
+      "rationale": "Several softened negatives culminate in an explicit non-recommendation.",
+      "text": "It is not without useful features, but it is neither reliable nor easy to use, and I cannot recommend it."
+    },
+    {
+      "id": "negation-04",
+      "category": "negation",
+      "expected_sentiment": "positive",
+      "rationale": "Negated failure means consistently good performance.",
+      "text": "This little printer has never failed to impress me and has not jammed once in six months."
+    },
+    {
+      "id": "long-01",
+      "category": "very_long_review",
+      "expected_sentiment": "positive",
+      "rationale": "Many early reservations and operational details precede a strongly positive conclusion beyond a typical short review.",
+      "text": "I waited several months before reviewing this laptop because first impressions can be misleading. The shipping carton was ordinary, the quick-start sheet was too brief, and the initial operating-system updates took almost an entire evening. I also disliked the amount of promotional software installed by default, and the trackpad required some adjustment before gestures felt natural. During the first week I questioned whether the purchase had been sensible. After removing the unwanted applications and installing my usual development tools, however, the machine settled into daily use remarkably well. The keyboard is comfortable for long writing sessions, the display remains readable near a window, and the fans are quiet during ordinary browsing. I have compiled several large projects, edited photographs, attended long video meetings, and connected two external monitors without instability. Battery life is not the advertised figure, but it reliably lasts through most of my working day. The speakers are average and the webcam could be sharper, yet neither affects my main use. Most importantly, the system has not crashed or slowed down under the workloads I actually bought it for. The early setup was annoying and the accessories are minimal, but those issues are temporary. After three months of dependable performance, I am pleased with the laptop and would purchase it again."
+    },
+    {
+      "id": "long-02",
+      "category": "very_long_review",
+      "expected_sentiment": "negative",
+      "rationale": "Positive presentation and features are outweighed by repeated failures described later in a long review.",
+      "text": "The vacuum made a very convincing first impression. It arrived in attractive packaging, every attachment had a labeled compartment, and assembly took less than five minutes. On hard floors it collected visible dust quickly, and the headlight was surprisingly useful beneath furniture. The controls were clear, the handle felt comfortable, and the machine was lighter than the older vacuum it replaced. Unfortunately those strengths did not survive normal ownership. By the third cleaning session the brush stopped rotating whenever it touched a rug. I followed the maintenance guide, removed every strand of hair, checked the belt, and reset the unit, but the problem returned. A week later the battery indicator began jumping from sixty percent to empty without warning. Customer support suggested charging it overnight, which I had already done, and then asked me to repeat the same troubleshooting steps. The replacement battery improved runtime for two days before showing identical behavior. Dust also leaks around the bin seal, leaving a fine layer on the body after each use. The useful attachments and thoughtful design cannot compensate for a vacuum that repeatedly stops in the middle of cleaning. I spent more time diagnosing it than using it, and the return period became another support argument. Despite the excellent unboxing experience and strong suction during its brief working periods, this product has been unreliable and frustrating. I returned it and cannot recommend it."
+    },
+    {
+      "id": "long-03",
+      "category": "very_long_review",
+      "expected_sentiment": "positive",
+      "rationale": "A long mixed account resolves clearly in favor of the product.",
+      "text": "This cookware set has now been used for weekday breakfasts, large family dinners, and several attempts at recipes that were entirely new to me. When it first arrived I worried because the pans felt lighter than the heavy cast-iron pieces I normally use. One lid had a tiny cosmetic mark, the handles looked narrower than they appeared in the photographs, and the care instructions warned against the highest heat setting. Those details made me cautious. In practice, the lighter weight has been an advantage because every pan is easy to lift when full. Heat spreads evenly across the bases, eggs release with very little oil, and sauces no longer burn around the outer edge while remaining cold in the center. The handles stay cool on the stove, and the lids fit securely enough to control steam. I accidentally overheated the smallest pan once, but it cleaned without permanent staining. The set is not perfect: the largest pot would benefit from a helper handle, and the shiny exterior shows fingerprints immediately. It also requires hand washing if you want the finish to remain spotless. Still, those are maintenance preferences rather than performance failures. After dozens of meals, the coating remains intact and the bases are flat. Cooking has become easier, cleanup is faster, and every piece serves a useful purpose instead of filling a cabinet. I began with doubts about the construction, but sustained use changed my opinion. This is a practical, reliable set that I am happy to recommend."
+    },
+    {
+      "id": "long-04",
+      "category": "very_long_review",
+      "expected_sentiment": "negative",
+      "rationale": "Numerous small positives obscure an ultimately negative ownership experience.",
+      "text": "I chose this smart doorbell after comparing specifications for several weeks. The metal faceplate looks better than most plastic competitors, installation instructions are clearly illustrated, and the mounting hardware includes useful options for angled walls. Pairing it with the phone application worked on the first attempt. Live video is sharp in daylight, notifications usually arrive quickly, and the microphone is good enough for short conversations with a courier. If the review ended after the first weekend, it would have been enthusiastic. Problems appeared gradually. Night video frequently turns into a gray blur whenever a porch light is on, even though the advertised feature specifically mentions difficult lighting. Motion zones reset themselves after application updates, causing dozens of alerts from passing cars. Recorded clips sometimes begin after the visitor has already walked away. The subscription page also hides several features that appeared to be included with the device, so useful history requires another monthly payment. Support acknowledged the delayed recordings but offered no timeline for a correction. I reset the doorbell, changed wireless channels, moved the router closer, and installed every firmware update. None of those steps made the behavior dependable. The physical design remains attractive and live viewing still works, but a security device must record events consistently rather than merely look good beside the door. After missing two deliveries and one important visitor, I stopped trusting the notifications. The polished hardware cannot overcome unreliable software and unexpected recurring costs. I would not purchase this model again."
+    },
+    {
+      "id": "domain-01",
+      "category": "domain_shift",
+      "expected_sentiment": "negative",
+      "rationale": "Software deployment feedback differs from Amazon product-review language.",
+      "text": "The deployment passed every automated check, then silently dropped half the environment variables in production. Rolling back took an hour. This release tool is not ready for our team."
+    },
+    {
+      "id": "domain-02",
+      "category": "domain_shift",
+      "expected_sentiment": "positive",
+      "rationale": "Restaurant feedback is outside the product-review domain.",
+      "text": "The dining room was crowded, but the staff remained attentive, the curry was beautifully balanced, and dessert alone was worth returning for."
+    },
+    {
+      "id": "domain-03",
+      "category": "domain_shift",
+      "expected_sentiment": "negative",
+      "rationale": "Healthcare portal feedback uses a different operational domain.",
+      "text": "The clinic was helpful, but its patient portal lost my appointment request twice and exposed an old address I had already removed. I do not trust the portal."
+    },
+    {
+      "id": "domain-04",
+      "category": "domain_shift",
+      "expected_sentiment": "positive",
+      "rationale": "Short social-media style language is unlike long product reviews.",
+      "text": "Was expecting chaos after that update, but wow—the app is faster, cleaner, and finally stops draining my phone. Huge win."
+    }
+  ]
+}

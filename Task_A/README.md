@@ -169,6 +169,59 @@ The categories above are transparent keyword-based organization cues, not ground
 
 This is post-hoc reporting on the final test set. None of these observations affected model selection, training configuration, or reported test metrics.
 
+## Targeted challenge suite
+
+The project also includes 28 synthetic, difficult examples that are completely separate from Amazon Polarity training, validation, and final-test data. The suite contains four examples in each category:
+
+- Sarcasm
+- Mixed sentiment
+- Product versus delivery experience
+- Support complaints
+- Negation
+- Very long reviews
+- Domain shift
+
+Because the deployed model supports only two labels, every example has a human-authored `positive` or `negative` expected label representing its dominant overall judgment. This is necessarily subjective for mixed reviews. The suite is diagnostic only and was not used for training, model selection, hyperparameter tuning, or the reported final-test score.
+
+Run it with the already selected model:
+
+```powershell
+python scripts/evaluate_challenges.py
+```
+
+Measured diagnostic results:
+
+| Category | Correct | Diagnostic accuracy | Mean confidence |
+|---|---:|---:|---:|
+| Domain shift | 4/4 | 100% | 97.58% |
+| Mixed sentiment | 2/4 | 50% | 89.84% |
+| Negation | 2/4 | 50% | 99.48% |
+| Product versus delivery | 3/4 | 75% | 91.66% |
+| Sarcasm | 1/4 | 25% | 99.41% |
+| Support complaints | 3/4 | 75% | 98.80% |
+| Very long reviews | 0/4 | 0% | 92.23% |
+| **Overall** | **15/28** | **53.57%** | — |
+
+The challenge confusion matrix is `[[9, 5], [8, 6]]` for expected labels `[negative, positive]`. The model predicted negative 17 times and positive 11 times.
+
+Key observations:
+
+- **Sarcasm remains a clear failure mode.** Three of four sarcasm examples failed with very high confidence because surface-positive or surface-negative wording contradicted the intended meaning.
+- **Negation remains brittle.** Double negation and phrases such as “never failed” were confidently interpreted as negative.
+- **Mixed/aspect sentiment is lossy under binary labels.** The model often followed the complaint even when the human-authored overall judgment was positive.
+- **Delivery and support separation is imperfect but visible.** The model handled three of four examples in each category, while still confusing fast delivery with a positive defective-product judgment in one case.
+- **All four long reviews were intentionally longer than 256 tokens and all failed.** Their decisive conclusion occurred late, demonstrating a direct truncation limitation rather than merely speculating about one.
+- **Four domain-shift examples happened to pass, but this tiny synthetic sample cannot establish cross-domain robustness.** Broader labeled domain holdouts would be required for that claim.
+- **High confidence did not imply correctness.** Several failed categories had mean confidence above 99%, strengthening the case for confidence calibration.
+
+Artifacts are self-describing and committed:
+
+- Challenge definitions and rationales: `data/challenge_examples.json`
+- Every prediction and failure: `results/challenge_suite/predictions.csv`
+- Per-category summary and provenance: `results/challenge_suite/summary.json`
+
+These diagnostic scores must not be compared directly with the held-out Amazon Polarity test score: the challenge examples are deliberately adversarial, synthetic, small, and subjectively labeled.
+
 ## API
 
 Start the production-style inference service:
@@ -246,3 +299,5 @@ Model weights, runtime checkpoints, and cached data are ignored by Git. Lightwei
 - Softmax confidence is not guaranteed to be calibrated.
 - Sentiment is not equivalent to business urgency.
 - The final 1,000-row test subset is suitable for this assignment, not a substitute for broader production evaluation.
+
+The targeted challenge suite provides concrete evidence for the sarcasm, negation, aspect-mixing, support/delivery, truncation, and domain-shift limitations. It documents the current behavior without claiming that these limitations are fully solved.

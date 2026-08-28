@@ -1,0 +1,258 @@
+{
+  "total_examples": 28,
+  "correct": 15,
+  "diagnostic_accuracy": 0.5357142857142857,
+  "expected_label_counts": {
+    "negative": 14,
+    "positive": 14
+  },
+  "prediction_counts": {
+    "negative": 17,
+    "positive": 11
+  },
+  "confusion_matrix_labels": [
+    "negative",
+    "positive"
+  ],
+  "confusion_matrix": [
+    [
+      9,
+      5
+    ],
+    [
+      8,
+      6
+    ]
+  ],
+  "truncated_example_count": 4,
+  "category_metrics": {
+    "domain_shift": {
+      "examples": 4,
+      "correct": 4,
+      "diagnostic_accuracy": 1.0,
+      "mean_confidence": 0.975825
+    },
+    "mixed_sentiment": {
+      "examples": 4,
+      "correct": 2,
+      "diagnostic_accuracy": 0.5,
+      "mean_confidence": 0.89835
+    },
+    "negation": {
+      "examples": 4,
+      "correct": 2,
+      "diagnostic_accuracy": 0.5,
+      "mean_confidence": 0.9948
+    },
+    "product_vs_delivery": {
+      "examples": 4,
+      "correct": 3,
+      "diagnostic_accuracy": 0.75,
+      "mean_confidence": 0.916625
+    },
+    "sarcasm": {
+      "examples": 4,
+      "correct": 1,
+      "diagnostic_accuracy": 0.25,
+      "mean_confidence": 0.994075
+    },
+    "support_complaint": {
+      "examples": 4,
+      "correct": 3,
+      "diagnostic_accuracy": 0.75,
+      "mean_confidence": 0.98795
+    },
+    "very_long_review": {
+      "examples": 4,
+      "correct": 0,
+      "diagnostic_accuracy": 0.0,
+      "mean_confidence": 0.922325
+    }
+  },
+  "failures": [
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "sarcasm-01",
+      "category": "sarcasm",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.9886,
+      "token_count": 17,
+      "truncated": false,
+      "rationale": "Positive surface word followed by an obvious failure.",
+      "text": "Fantastic purchase. It stopped working before I even finished throwing away the packaging."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "sarcasm-02",
+      "category": "sarcasm",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.9962,
+      "token_count": 24,
+      "truncated": false,
+      "rationale": "Gratitude is used sarcastically to criticize missing accessories.",
+      "text": "Exactly what I needed: a wireless keyboard with no receiver in the box. Thanks for the decorative paperweight."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "sarcasm-03",
+      "category": "sarcasm",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9943,
+      "token_count": 21,
+      "truncated": false,
+      "rationale": "A mock complaint emphasizes unusually strong battery life.",
+      "text": "Terrible problem to have: after three days of travel I still cannot get this battery to die."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "mixed-02",
+      "category": "mixed_sentiment",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9925,
+      "token_count": 28,
+      "truncated": false,
+      "rationale": "Packaging criticism is outweighed by strong product satisfaction.",
+      "text": "The box arrived crushed and looked awful, yet the headphones inside were untouched, sound excellent, and have become my daily pair."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "mixed-03",
+      "category": "mixed_sentiment",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.8951,
+      "token_count": 30,
+      "truncated": false,
+      "rationale": "A color complaint is minor; comfort and the decision to keep dominate.",
+      "text": "These shoes are not the blue shown online, which was disappointing, but they are the most comfortable pair I own and I am keeping them."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "delivery-02",
+      "category": "product_vs_delivery",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.9963,
+      "token_count": 32,
+      "truncated": false,
+      "rationale": "Fast delivery cannot compensate for a defective product.",
+      "text": "Shipping was impressively fast and the package was pristine. Unfortunately the monitor has a bright green line across the center, so it is unusable."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "support-03",
+      "category": "support_complaint",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9588,
+      "token_count": 26,
+      "truncated": false,
+      "rationale": "Confusing setup is outweighed by effective support and a good final outcome.",
+      "text": "Setup instructions were confusing, although the support agent patiently walked me through every step. It has worked flawlessly since then."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "negation-02",
+      "category": "negation",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9917,
+      "token_count": 21,
+      "truncated": false,
+      "rationale": "Double negation resolves to a positive judgment.",
+      "text": "I cannot say I dislike it, and I would not hesitate to recommend it to a friend."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "negation-04",
+      "category": "negation",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.996,
+      "token_count": 20,
+      "truncated": false,
+      "rationale": "Negated failure means consistently good performance.",
+      "text": "This little printer has never failed to impress me and has not jammed once in six months."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "long-01",
+      "category": "very_long_review",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9658,
+      "token_count": 257,
+      "truncated": true,
+      "rationale": "Many early reservations and operational details precede a strongly positive conclusion beyond a typical short review.",
+      "text": "I waited several months before reviewing this laptop because first impressions can be misleading. The shipping carton was ordinary, the quick-start sheet was too brief, and the initial operating-system updates took almost an entire evening. I also disliked the amount of promotional software installed by default, and the trackpad required some adjustment before gestures felt natural. During the first week I questioned whether the purchase had been sensible. After removing the unwanted applications and installing my usual development tools, however, the machine settled into daily use remarkably well. The keyboard is comfortable for long writing sessions, the display remains readable near a window, and the fans are quiet during ordinary browsing. I have compiled several large projects, edited photographs, attended long video meetings, and connected two external monitors without instability. Battery life is not the advertised figure, but it reliably lasts through most of my working day. The speakers are average and the webcam could be sharper, yet neither affects my main use. Most importantly, the system has not crashed or slowed down under the workloads I actually bought it for. The early setup was annoying and the accessories are minimal, but those issues are temporary. After three months of dependable performance, I am pleased with the laptop and would purchase it again."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "long-02",
+      "category": "very_long_review",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.8446,
+      "token_count": 273,
+      "truncated": true,
+      "rationale": "Positive presentation and features are outweighed by repeated failures described later in a long review.",
+      "text": "The vacuum made a very convincing first impression. It arrived in attractive packaging, every attachment had a labeled compartment, and assembly took less than five minutes. On hard floors it collected visible dust quickly, and the headlight was surprisingly useful beneath furniture. The controls were clear, the handle felt comfortable, and the machine was lighter than the older vacuum it replaced. Unfortunately those strengths did not survive normal ownership. By the third cleaning session the brush stopped rotating whenever it touched a rug. I followed the maintenance guide, removed every strand of hair, checked the belt, and reset the unit, but the problem returned. A week later the battery indicator began jumping from sixty percent to empty without warning. Customer support suggested charging it overnight, which I had already done, and then asked me to repeat the same troubleshooting steps. The replacement battery improved runtime for two days before showing identical behavior. Dust also leaks around the bin seal, leaving a fine layer on the body after each use. The useful attachments and thoughtful design cannot compensate for a vacuum that repeatedly stops in the middle of cleaning. I spent more time diagnosing it than using it, and the return period became another support argument. Despite the excellent unboxing experience and strong suction during its brief working periods, this product has been unreliable and frustrating. I returned it and cannot recommend it."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "long-03",
+      "category": "very_long_review",
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "correct": false,
+      "confidence": 0.9521,
+      "token_count": 294,
+      "truncated": true,
+      "rationale": "A long mixed account resolves clearly in favor of the product.",
+      "text": "This cookware set has now been used for weekday breakfasts, large family dinners, and several attempts at recipes that were entirely new to me. When it first arrived I worried because the pans felt lighter than the heavy cast-iron pieces I normally use. One lid had a tiny cosmetic mark, the handles looked narrower than they appeared in the photographs, and the care instructions warned against the highest heat setting. Those details made me cautious. In practice, the lighter weight has been an advantage because every pan is easy to lift when full. Heat spreads evenly across the bases, eggs release with very little oil, and sauces no longer burn around the outer edge while remaining cold in the center. The handles stay cool on the stove, and the lids fit securely enough to control steam. I accidentally overheated the smallest pan once, but it cleaned without permanent staining. The set is not perfect: the largest pot would benefit from a helper handle, and the shiny exterior shows fingerprints immediately. It also requires hand washing if you want the finish to remain spotless. Still, those are maintenance preferences rather than performance failures. After dozens of meals, the coating remains intact and the bases are flat. Cooking has become easier, cleanup is faster, and every piece serves a useful purpose instead of filling a cabinet. I began with doubts about the construction, but sustained use changed my opinion. This is a practical, reliable set that I am happy to recommend."
+    },
+    {
+      "suite_id": "binary-sentiment-challenge-v1",
+      "example_id": "long-04",
+      "category": "very_long_review",
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "correct": false,
+      "confidence": 0.9268,
+      "token_count": 286,
+      "truncated": true,
+      "rationale": "Numerous small positives obscure an ultimately negative ownership experience.",
+      "text": "I chose this smart doorbell after comparing specifications for several weeks. The metal faceplate looks better than most plastic competitors, installation instructions are clearly illustrated, and the mounting hardware includes useful options for angled walls. Pairing it with the phone application worked on the first attempt. Live video is sharp in daylight, notifications usually arrive quickly, and the microphone is good enough for short conversations with a courier. If the review ended after the first weekend, it would have been enthusiastic. Problems appeared gradually. Night video frequently turns into a gray blur whenever a porch light is on, even though the advertised feature specifically mentions difficult lighting. Motion zones reset themselves after application updates, causing dozens of alerts from passing cars. Recorded clips sometimes begin after the visitor has already walked away. The subscription page also hides several features that appeared to be included with the device, so useful history requires another monthly payment. Support acknowledged the delayed recordings but offered no timeline for a correction. I reset the doorbell, changed wireless channels, moved the router closer, and installed every firmware update. None of those steps made the behavior dependable. The physical design remains attractive and live viewing still works, but a security device must record events consistently rather than merely look good beside the door. After missing two deliveries and one important visitor, I stopped trusting the notifications. The polished hardware cannot overcome unreliable software and unexpected recurring costs. I would not purchase this model again."
+    }
+  ],
+  "suite_id": "binary-sentiment-challenge-v1",
+  "status": "diagnostic_only",
+  "guardrail": "Synthetic challenge examples were not used for training, validation model selection, final-test scoring, or hyperparameter tuning. Expected labels represent a human-authored dominant binary judgment and can be subjective.",
+  "model_selection": {
+    "selected_experiment": "full",
+    "validation_macro_f1": 0.9409900273146161
+  },
+  "provenance": {
+    "generated_by": "scripts/evaluate_challenges.py",
+    "challenge_data": "data/challenge_examples.json",
+    "predictions": "results/challenge_suite/predictions.csv",
+    "base_model": "distilbert-base-uncased",
+    "selected_model_directory": "models/best",
+    "max_length": 256
+  }
+}
