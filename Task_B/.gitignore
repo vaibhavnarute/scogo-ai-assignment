@@ -1,0 +1,32 @@
+.harness_runs/
+.env
+.env.*
+!.env.example
+
+evals/workspaces/
+evals/baseline_workspaces/
+evals/demo_workspaces/
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Model/checkpoint artifacts
+models/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Temporary files/directories
+*.tmp
+*.temp
+tmp/
+temp/

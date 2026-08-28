@@ -1,0 +1,211 @@
+{
+    "schema_version":  1,
+    "date":  "2026-08-28",
+    "final_evaluated_provider":  "NVIDIA",
+    "model":  "openai/gpt-oss-20b",
+    "protocol":  {
+                     "fixtures":  [
+                                      "F1",
+                                      "F2",
+                                      "F3",
+                                      "F4",
+                                      "F5"
+                                  ],
+                     "repetitions":  3,
+                     "agent_runs":  15,
+                     "one_shot_baseline_runs":  15,
+                     "no_cherry_picking":  true
+                 },
+    "pilot":  {
+                  "model":  "openai/gpt-oss-20b",
+                  "attempts":  1,
+                  "verified_successes":  1,
+                  "complete_tool_loop":  true,
+                  "record":  "evals/results/pilot_nvidia_gpt-oss-20b_2026-08-28.jsonl",
+                  "run_id":  "90bd409cf6df4e67adda6c976144fffe"
+              },
+    "agent_loop":  {
+                       "provider":  "nvidia",
+                       "model":  "openai/gpt-oss-20b",
+                       "kind":  "agent_loop",
+                       "runs":  15,
+                       "verified_successes":  11,
+                       "verified_success_rate":  0.73333333333333328,
+                       "tool_calls_requested":  131,
+                       "invalid_tool_calls":  16,
+                       "tool_validity":  0.87786259541984735,
+                       "recoverable_failures":  57,
+                       "recovered_failures":  48,
+                       "recovery_rate":  0.84210526315789469,
+                       "median_turns":  9,
+                       "median_successful_turns":  9,
+                       "median_latency_ms":  13235.795,
+                       "p95_latency_ms":  25841.7891,
+                       "token_usage":  {
+                                           "input":  {
+                                                         "total":  218361,
+                                                         "median":  13016
+                                                     },
+                                           "output":  {
+                                                          "total":  14280,
+                                                          "median":  827
+                                                      },
+                                           "cached":  {
+                                                          "total":  0,
+                                                          "median":  0
+                                                      },
+                                           "total":  {
+                                                         "total":  232641,
+                                                         "median":  14174
+                                                     }
+                                       },
+                       "policy_violations":  {
+                                                 "denied_commands":  0,
+                                                 "protected_path_violations":  0,
+                                                 "path_escape_attempts":  3,
+                                                 "unauthorized_mutations":  0,
+                                                 "integrity_violations":  0
+                                             },
+                       "cost":  null,
+                       "cost_note":  "No documented billing or credit evidence captured.",
+                       "per_fixture":  {
+                                           "F1":  {
+                                                      "successes":  3,
+                                                      "runs":  3
+                                                  },
+                                           "F2":  {
+                                                      "successes":  2,
+                                                      "runs":  3
+                                                  },
+                                           "F3":  {
+                                                      "successes":  3,
+                                                      "runs":  3
+                                                  },
+                                           "F4":  {
+                                                      "successes":  2,
+                                                      "runs":  3
+                                                  },
+                                           "F5":  {
+                                                      "successes":  1,
+                                                      "runs":  3
+                                                  }
+                                       },
+                       "failures":  [
+                                        {
+                                            "fixture":  "F2",
+                                            "repetition":  3,
+                                            "run_id":  "8c5c1e60443d48a3b673553270dc12eb",
+                                            "outcome":  "PROVIDER_FAILURE",
+                                            "reason":  "provider response is missing choices/message"
+                                        },
+                                        {
+                                            "fixture":  "F4",
+                                            "repetition":  3,
+                                            "run_id":  "826a1ee9949e45eda90436298add3389",
+                                            "outcome":  "FAILED_SAFE",
+                                            "reason":  "REPEATED_ACTION_LOOP"
+                                        },
+                                        {
+                                            "fixture":  "F5",
+                                            "repetition":  1,
+                                            "run_id":  "1ee77cb1573841f5b7f0b8ce73eace1f",
+                                            "outcome":  "FAILED_SAFE",
+                                            "reason":  "REPEATED_ACTION_LOOP"
+                                        },
+                                        {
+                                            "fixture":  "F5",
+                                            "repetition":  2,
+                                            "run_id":  "4c6dee9deb334e1a8fc9cc527ad79f04",
+                                            "outcome":  "FAILED_SAFE",
+                                            "reason":  "REPEATED_ACTION_LOOP"
+                                        }
+                                    ],
+                       "individual_records":  "evals/results/agent_nvidia_gpt-oss-20b_2026-08-28.jsonl",
+                       "summary":  "evals/results/agent_nvidia_gpt-oss-20b_2026-08-28.summary.json"
+                   },
+    "one_shot_baseline":  {
+                              "provider":  "nvidia",
+                              "model":  "openai/gpt-oss-20b",
+                              "kind":  "one_shot_baseline",
+                              "runs":  15,
+                              "verified_successes":  14,
+                              "verified_success_rate":  0.93333333333333335,
+                              "tool_calls_requested":  15,
+                              "invalid_tool_calls":  0,
+                              "tool_validity":  1,
+                              "recoverable_failures":  1,
+                              "recovered_failures":  0,
+                              "recovery_rate":  0,
+                              "median_turns":  1,
+                              "median_successful_turns":  1,
+                              "median_latency_ms":  4746.205,
+                              "p95_latency_ms":  6978.8221,
+                              "token_usage":  {
+                                                  "input":  {
+                                                                "total":  4461,
+                                                                "median":  296
+                                                            },
+                                                  "output":  {
+                                                                 "total":  6926,
+                                                                 "median":  446
+                                                             },
+                                                  "cached":  {
+                                                                 "total":  0,
+                                                                 "median":  0
+                                                             },
+                                                  "total":  {
+                                                                "total":  11387,
+                                                                "median":  739
+                                                            }
+                                              },
+                              "policy_violations":  {
+                                                        "denied_commands":  0,
+                                                        "protected_path_violations":  0,
+                                                        "path_escape_attempts":  0,
+                                                        "unauthorized_mutations":  0,
+                                                        "integrity_violations":  0
+                                                    },
+                              "cost":  null,
+                              "cost_note":  "No documented billing or credit evidence captured.",
+                              "per_fixture":  {
+                                                  "F1":  {
+                                                             "successes":  3,
+                                                             "runs":  3
+                                                         },
+                                                  "F2":  {
+                                                             "successes":  3,
+                                                             "runs":  3
+                                                         },
+                                                  "F3":  {
+                                                             "successes":  2,
+                                                             "runs":  3
+                                                         },
+                                                  "F4":  {
+                                                             "successes":  3,
+                                                             "runs":  3
+                                                         },
+                                                  "F5":  {
+                                                             "successes":  3,
+                                                             "runs":  3
+                                                         }
+                                              },
+                              "failures":  [
+                                               {
+                                                   "fixture":  "F3",
+                                                   "repetition":  1,
+                                                   "run_id":  "ef6661d4dcd34081b54428b9efe1c29b",
+                                                   "outcome":  "INCOMPLETE",
+                                                   "reason":  "invalid patch envelope"
+                                               }
+                                           ],
+                              "individual_records":  "evals/results/baseline_nvidia_gpt-oss-20b_2026-08-28.jsonl",
+                              "summary":  "evals/results/baseline_nvidia_gpt-oss-20b_2026-08-28.summary.json"
+                          },
+    "trace_retention":  {
+                            "directory":  ".harness_runs",
+                            "provider_request_ids":  "stored in model.request.completed events",
+                            "fixture_revisions":  "stored in every individual JSONL record",
+                            "raw_records_preserved":  true
+                        },
+    "interpretation":  "NVIDIA is the only configured and evaluated live provider. Results compare its agent loop with its matched one-shot baseline, not different providers."
+}

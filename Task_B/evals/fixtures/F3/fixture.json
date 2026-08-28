@@ -1,0 +1,1 @@
+{"id":"F3","purpose":"validation/exception behavior","verification_command":"python -m pytest -q","protected_paths":["tests"]}

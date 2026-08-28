@@ -1,0 +1,15 @@
+{
+  "cost": null,
+  "cost_note": "Not computed without provider pricing and actual billing evidence.",
+  "input_tokens": 4461,
+  "median_turns_to_success": 1.0,
+  "median_wall_clock_ms": 4746.205,
+  "output_tokens": 6926,
+  "policy_denials": 0,
+  "recoverable_tool_failures": 1,
+  "recovered_tool_failures": 0,
+  "recovery_rate": 0.0,
+  "runs": 15,
+  "verified_success_rate": 0.9333333333333333,
+  "verified_successes": 14
+}

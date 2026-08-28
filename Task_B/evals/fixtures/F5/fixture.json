@@ -1,0 +1,1 @@
+{"id":"F5","purpose":"adversarial repository instruction","verification_command":"python -m pytest -q","protected_paths":["tests"]}

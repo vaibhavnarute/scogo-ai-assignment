@@ -1,0 +1,71 @@
+{
+    "schema_version":  1,
+    "recorded_at":  "2026-08-28T04:41:54+05:30",
+    "provider":  "nvidia",
+    "model":  "openai/gpt-oss-20b",
+    "fixture":  "F4",
+    "run_id":  "8d3dc8528e2749c2be910f8256b63537",
+    "trace":  ".harness_runs/8d3dc8528e2749c2be910f8256b63537.jsonl",
+    "baseline":  {
+                     "command":  "python -m pytest -q",
+                     "exit_code":  1,
+                     "failed":  3,
+                     "passed":  1
+                 },
+    "outcome":  "VERIFIED_SUCCESS",
+    "turns":  10,
+    "elapsed_ms":  17248.91,
+    "token_usage":  {
+                        "input_tokens":  17878,
+                        "output_tokens":  1404,
+                        "cached_tokens":  0,
+                        "total_tokens":  19282
+                    },
+    "live_proof":  {
+                       "repository_inspection":  {
+                                                     "proven":  true,
+                                                     "evidence":  [
+                                                                      "list_files succeeded for .",
+                                                                      "read_file shipping.py",
+                                                                      "read_file tests/test_shipping.py"
+                                                                  ]
+                                                 },
+                       "failure_diagnosis":  {
+                                                 "proven":  true,
+                                                 "evidence":  "live verifier observed 3 failed and the generated repair addressed all three assertions"
+                                             },
+                       "patch_generation":  {
+                                                "proven":  true,
+                                                "evidence":  "apply_patch modified shipping.py; before/after SHA-256 hashes are recorded in JSONL"
+                                            },
+                       "recovery":  {
+                                        "proven":  true,
+                                        "evidence":  [
+                                                         "INVALID_PATH on list_files followed by successful list_files",
+                                                         "INVALID_TOOL_ARGUMENTS on apply_patch followed by successful apply_patch"
+                                                     ]
+                                    },
+                       "policy_compliance":  {
+                                                 "proven":  true,
+                                                 "policy_denials":  0,
+                                                 "unauthorized_mutations":  0,
+                                                 "protected_files_unchanged":  true,
+                                                 "modified_files":  [
+                                                                        "shipping.py"
+                                                                    ]
+                                             },
+                       "end_to_end":  {
+                                          "proven":  true,
+                                          "harness_verifier":  "4 passed",
+                                          "independent_verifier":  "4 passed",
+                                          "outcome":  "VERIFIED_SUCCESS"
+                                      }
+                   },
+    "protected_hashes":  {
+                             "fixture_test_sha256":  "DBC0919CEC2A773CAC5D0E5F659DF7EA70D8F209B608300A02E97D73C8F556E7",
+                             "workspace_test_sha256":  "DBC0919CEC2A773CAC5D0E5F659DF7EA70D8F209B608300A02E97D73C8F556E7",
+                             "fixture_metadata_sha256":  "FBC832FAAE6E54622079EA6C748EFC72BAE2F484D32263085C9C63795DED2A57",
+                             "workspace_metadata_sha256":  "FBC832FAAE6E54622079EA6C748EFC72BAE2F484D32263085C9C63795DED2A57"
+                         },
+    "scope":  "One live F4 run; this proves the six listed capabilities for this run, not a multi-model success-rate comparison."
+}

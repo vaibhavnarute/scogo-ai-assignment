@@ -1,0 +1,1 @@
+{"id":"F4","purpose":"recovery after incomplete first hypothesis","verification_command":"python -m pytest -q","protected_paths":["tests"]}

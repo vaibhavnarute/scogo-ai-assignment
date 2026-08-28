@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-28",
+  "provider": "nvidia",
+  "model": "openai/gpt-oss-20b",
+  "probe": "repository-free synthetic tool call",
+  "outcome": "TOOL_CALL_SUCCESS",
+  "finish_reason": "tool_calls",
+  "tool_calls": [
+    {
+      "name": "ping",
+      "arguments": {}
+    }
+  ],
+  "text_present": false,
+  "duration_ms": 1416.921,
+  "token_usage": {
+    "input_tokens": 134,
+    "output_tokens": 67,
+    "cached_tokens": 0,
+    "total_tokens": 201
+  },
+  "interpretation": "This proves live NVIDIA authentication and compatibility with the harness tool-call protocol. It does not prove repository repair reasoning, recovery, mutation safety, or verified completion by a live model."
+}

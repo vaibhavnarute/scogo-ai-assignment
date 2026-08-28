@@ -1,0 +1,36 @@
+{
+  "captured_at_local_date": "2026-08-28",
+  "provider": "nvidia",
+  "model": "openai/gpt-oss-20b",
+  "git_commit": "7f142075e11b9dee85e5d53dfb75a3393dd408ec",
+  "git_tree": "de759cbcb79cada0178153e2290eaa81812ee9b1",
+  "working_tree_clean": false,
+  "working_tree_status": ["M README.md", "?? Task_B/"],
+  "provenance_note": "Task_B is untracked at the repository root, so formal evaluation uses canonical content hashes rather than claiming a clean committed revision. The launch snapshot hash was captured before evaluation and includes generated workspace Python files; those copies are expected to change during repair runs. The stable source hash excludes mutable generated workspaces and is the post-run implementation-stability check.",
+  "implementation_revision": "dirty-sha256:1bc157ac2fc1c10b11977ae53126afc23b525666f7809e05095a7ea5dd48a680",
+  "implementation_hash_scope": "Pre-evaluation 72-file launch snapshot: harness/**/*.py, evals/**/*.py including then-current generated workspace copies, and pyproject.toml; canonical sorted relative-path plus per-file SHA-256 manifest",
+  "stable_source_sha256": "4ca53e89d00d8bab1d28eaad0c4354d4cfe0fcf2375785af3d7d9a6d94cfd3be",
+  "stable_source_hash_scope": "40 immutable implementation files: harness/**/*.py, top-level evals/*.py, and pyproject.toml; excludes fixtures, generated workspaces, traces, results, tests, and documentation",
+  "system_prompt_sha256": "927053c0932bb298b9f5f59fcc61583545e9bb1d7316a58ebdba32ca1dace526",
+  "tool_schemas_sha256": "4eb468b5827ee9bb5a3abb64a77d65469825a959d3addc4698790e3388a5128f",
+  "fixture_revisions": {
+    "F1": "3b26ff13b01356cd2292fcbbca57070af1e6cba126a7b0741f27150acd67dee7",
+    "F2": "db337b2330de0ac6e4dca3f572af3a3b842c9c4c919e5552b4d00e549022783b",
+    "F3": "874b723e4b95de61506ca9dc14b5ef1ef1c3fd3943172eb920f5682408bda65a",
+    "F4": "91f75d29926e9258c828356c799067d2820fa40f383f34acf26e729d42eabe52",
+    "F5": "32bdec166f38bfaf268cec2fc476729b7b8a307b389cc0079cc9eb37d3e95284"
+  },
+  "evaluation_configuration": {
+    "fixtures": ["F1", "F2", "F3", "F4", "F5"],
+    "repetitions": 3,
+    "agent_runs": 15,
+    "baseline_runs": 15,
+    "agent_max_turns": 20,
+    "approval_mode": "yes",
+    "verification_source": "trusted fixture configuration",
+    "cost": null
+  },
+  "python": "3.13.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "deterministic_gate": {"collected": 131, "passed": 130, "skipped": 1}
+}

@@ -7,7 +7,7 @@ This repository contains the assignment tasks as independent, reproducible proje
 | Task | Project | Status | Documentation |
 |---|---|---|---|
 | Task A | Customer-review sentiment classification with DistilBERT | **Completed** | [Task_A/README.md](Task_A/README.md) |
-| Task B | Next assignment task | **In progress / pending specification** | Will be added under `Task_B/` |
+| Task B | Policy-constrained repository-repair AI CLI harness | **Completed — audited NVIDIA evaluation** | [Task_B/README.md](Task_B/README.md) |
 
 ## Task A summary
 
@@ -67,7 +67,61 @@ scogo-ai-assignment/
 │   ├── scripts/
 │   ├── tests/
 │   └── results/
-└── Task_B/                  # added when Task B implementation begins
+└── Task_B/                  # Completed Task B implementation and audited NVIDIA evaluation
 ```
 
 Model weights, dataset caches, virtual environments, and training checkpoints are intentionally excluded from Git. Follow the task-specific README to reproduce them.
+
+## Task B summary
+
+Task B is a policy-constrained repository-repair AI CLI harness evaluated with NVIDIA `openai/gpt-oss-20b`.
+
+The harness gives the model a bounded set of tools for repository inspection, file reading, patch application, subprocess execution, and completion requests. The harness—not the model—owns path validation, protected-file enforcement, subprocess policy, integrity tracking, tracing, state, and final verification.
+
+The final audited NVIDIA evaluation used:
+
+```text
+5 deterministic repair fixtures
+× 3 repetitions
+× 2 modes
+= 30 formal runs
+```
+
+The two compared modes were the iterative agent harness and a matched one-shot baseline using the same NVIDIA model.
+
+### Final audited Task B results
+
+| Metric | Agent harness | One-shot baseline |
+|---|---:|---:|
+| Verified repairs | 14/15 (93.33%) | 13/15 (86.67%) |
+| Raw provider tool validity | 90/112 (80.36%) | 15/15 (100%) |
+| Normalized executable validity | 107/112 (95.54%) | 15/15 (100%) |
+| Event-level recovery | 28/29 (96.55%) | 0/2 (0%) |
+| Run-level recovery | 14/15 (93.33%) | 0/2 (0%) |
+| Median turns | 8 | 1 |
+| Median latency | 13.931 s | 5.546 s |
+| p95 latency | 28.296 s | 16.261 s |
+| Median total tokens | 12,237 | 715 |
+| Total tokens | 198,729 | 10,890 |
+| Cost | `null` | `null` |
+
+The iterative harness achieved one additional verified repair, while the one-shot baseline remained substantially faster and more token-efficient.
+
+Safety and integrity results for the final formal evaluation:
+
+```text
+Actual policy bypasses:                  0
+Protected-file unauthorized mutations:  0
+Unauthorized mutations:                 0
+Integrity violations:                   0
+Integrity violations reaching success:  0
+Secret matches in final artifacts:       0
+```
+
+Five attempted outside-workspace commands were blocked successfully by the harness and are counted as policy-enforcement successes, not bypasses.
+
+The implementation was also demonstrated on deterministic repair fixtures, a fresh unseen small Python repository, and an isolated copy of the larger Task A FastAPI/ML project.
+
+Raw JSONL runtime traces are retained locally under `Task_B/.harness_runs/` and are intentionally ignored by Git. Sanitized final evaluation records, summaries, provenance, and reports are committed under `Task_B/evals/results/`.
+
+See [Task_B/README.md](Task_B/README.md) for architecture, setup, CLI usage, evaluation methodology, failure analysis, limitations, and reproducibility details.
